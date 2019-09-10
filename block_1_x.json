@@ -1,0 +1,1553 @@
+{
+  'Massachusetts Institute of Technology': {
+    cites_count: {
+      '2014': 291784,
+      '2015': 242265,
+      '2016': 182475,
+      '2017': 111072,
+      '2018': 44359,
+      '2019': 4356
+    },
+    cites_publication: {
+      '2014': 32.081802,
+      '2015': 26.010843,
+      '2016': 20.056606,
+      '2017': 12.136364,
+      '2018': 4.7554674,
+      '2019': 0.8433688
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Stanford University': {
+    cites_count: {
+      '2014': 403509,
+      '2015': 360993,
+      '2016': 269462,
+      '2017': 174520,
+      '2018': 72680,
+      '2019': 8402
+    },
+    cites_publication: {
+      '2014': 31.699976,
+      '2015': 26.606205,
+      '2016': 19.870363,
+      '2017': 12.33444,
+      '2018': 5.0283656,
+      '2019': 0.904316
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Harvard University': {
+    cites_count: {
+      '2014': 880628,
+      '2015': 710206,
+      '2016': 533035,
+      '2017': 342274,
+      '2018': 138252,
+      '2019': 16924
+    },
+    cites_publication: {
+      '2014': 30.782578,
+      '2015': 24.573751,
+      '2016': 17.79809,
+      '2017': 11.055362,
+      '2018': 4.454856,
+      '2019': 0.82681125
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'California Institute of Technology': {
+    cites_count: {
+      '2014': 140288,
+      '2015': 104560,
+      '2016': 95359,
+      '2017': 58517,
+      '2018': 24476,
+      '2019': 2576
+    },
+    cites_publication: {
+      '2014': 31.22368,
+      '2015': 24.237368,
+      '2016': 21.069157,
+      '2017': 12.886369,
+      '2018': 5.0591154,
+      '2019': 1.0003884
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Oxford': {
+    cites_count: {
+      '2014': 367313,
+      '2015': 310940,
+      '2016': 235475,
+      '2017': 139427,
+      '2018': 59228,
+      '2019': 7236
+    },
+    cites_publication: {
+      '2014': 29.326387,
+      '2015': 22.910404,
+      '2016': 16.962614,
+      '2017': 9.656947,
+      '2018': 4.006494,
+      '2019': 0.78167874
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Cambridge': {
+    cites_count: {
+      '2014': 285318,
+      '2015': 247662,
+      '2016': 204040,
+      '2017': 122014,
+      '2018': 54096,
+      '2019': 5706
+    },
+    cites_publication: {
+      '2014': 26.52887,
+      '2015': 22.283787,
+      '2016': 17.457222,
+      '2017': 10.379753,
+      '2018': 4.4464903,
+      '2019': 0.7773842
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'ETH Zurich - Swiss Federal Institute of Technology': {
+    cites_count: {
+      '2014': 190560,
+      '2015': 165684,
+      '2016': 120097,
+      '2017': 74451,
+      '2018': 35107,
+      '2019': 3545
+    },
+    cites_publication: {
+      '2014': 24.913061,
+      '2015': 21.42835,
+      '2016': 15.50439,
+      '2017': 9.315691,
+      '2018': 4.241,
+      '2019': 0.71862966
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Imperial College London': {
+    cites_count: {
+      '2014': 278116,
+      '2015': 248007,
+      '2016': 194847,
+      '2017': 123980,
+      '2018': 53116,
+      '2019': 6065
+    },
+    cites_publication: {
+      '2014': 25.166592,
+      '2015': 21.61281,
+      '2016': 16.709288,
+      '2017': 10.086235,
+      '2018': 4.351274,
+      '2019': 0.76655716
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Chicago': {
+    cites_count: {
+      '2014': 231456,
+      '2015': 200383,
+      '2016': 158130,
+      '2017': 92834,
+      '2018': 41475,
+      '2019': 4513
+    },
+    cites_publication: {
+      '2014': 27.166197,
+      '2015': 22.008018,
+      '2016': 17.900158,
+      '2017': 10.471969,
+      '2018': 4.657496,
+      '2019': 0.8221898
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  UCL: {
+    cites_count: {
+      '2014': 9095,
+      '2015': 6520,
+      '2016': 6150,
+      '2017': 3357,
+      '2018': 1429,
+      '2019': 241
+    },
+    cites_publication: {
+      '2014': 13.414454,
+      '2015': 9.574156,
+      '2016': 7.7749686,
+      '2017': 4.5611415,
+      '2018': 2.047278,
+      '2019': 0.51605994
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'National University of Singapore': {
+    cites_count: {
+      '2014': 194596,
+      '2015': 161043,
+      '2016': 129711,
+      '2017': 82310,
+      '2018': 37432,
+      '2019': 4463
+    },
+    cites_publication: {
+      '2014': 21.264997,
+      '2015': 17.759483,
+      '2016': 13.682595,
+      '2017': 8.484693,
+      '2018': 3.705038,
+      '2019': 0.68158215
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Nanyang Technological University': {
+    cites_count: {
+      '2014': 152619,
+      '2015': 130326,
+      '2016': 109952,
+      '2017': 73442,
+      '2018': 33261,
+      '2019': 3879
+    },
+    cites_publication: {
+      '2014': 23.092602,
+      '2015': 18.84413,
+      '2016': 14.693572,
+      '2017': 9.169934,
+      '2018': 4.2746434,
+      '2019': 0.7722477
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Princeton University': {
+    cites_count: {
+      '2014': 118411,
+      '2015': 109692,
+      '2016': 76070,
+      '2017': 48203,
+      '2018': 22830,
+      '2019': 2416
+    },
+    cites_publication: {
+      '2014': 27.659658,
+      '2015': 23.955448,
+      '2016': 16.927013,
+      '2017': 10.543088,
+      '2018': 4.717917,
+      '2019': 0.91968024
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Cornell University': {
+    cites_count: {
+      '2014': 224400,
+      '2015': 191485,
+      '2016': 139985,
+      '2017': 83525,
+      '2018': 37623,
+      '2019': 3955
+    },
+    cites_publication: {
+      '2014': 25.030674,
+      '2015': 21.478968,
+      '2016': 15.427044,
+      '2017': 9.472102,
+      '2018': 4.1919775,
+      '2019': 0.7211889
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Yale University': {
+    cites_count: {
+      '2014': 229758,
+      '2015': 205612,
+      '2016': 148950,
+      '2017': 92829,
+      '2018': 38911,
+      '2019': 4667
+    },
+    cites_publication: {
+      '2014': 26.108864,
+      '2015': 23.444925,
+      '2016': 16.572096,
+      '2017': 10.114295,
+      '2018': 4.166506,
+      '2019': 0.7502009
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Columbia University': {
+    cites_count: {
+      '2014': 279679,
+      '2015': 237884,
+      '2016': 176687,
+      '2017': 113472,
+      '2018': 50098,
+      '2019': 5273
+    },
+    cites_publication: {
+      '2014': 26.317776,
+      '2015': 22.213465,
+      '2016': 16.099043,
+      '2017': 10.047105,
+      '2018': 4.2778583,
+      '2019': 0.70306665
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Tsinghua University': {
+    cites_count: {
+      '2014': 201750,
+      '2015': 194166,
+      '2016': 165958,
+      '2017': 125236,
+      '2018': 58956,
+      '2019': 6589
+    },
+    cites_publication: {
+      '2014': 15.426671,
+      '2015': 14.7936,
+      '2016': 11.931699,
+      '2017': 8.56256,
+      '2018': 3.5867858,
+      '2019': 0.6404549
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Edinburgh': {
+    cites_count: {
+      '2014': 173942,
+      '2015': 134070,
+      '2016': 118676,
+      '2017': 76288,
+      '2018': 32281,
+      '2019': 3386
+    },
+    cites_publication: {
+      '2014': 26.172434,
+      '2015': 20.20648,
+      '2016': 16.696117,
+      '2017': 10.132554,
+      '2018': 4.2447076,
+      '2019': 0.7032191
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Pennsylvania': {
+    cites_count: {
+      '2014': 284797,
+      '2015': 241765,
+      '2016': 180123,
+      '2017': 112320,
+      '2018': 53452,
+      '2019': 5802
+    },
+    cites_publication: {
+      '2014': 25.58823,
+      '2015': 21.364882,
+      '2016': 15.562727,
+      '2017': 9.46251,
+      '2018': 4.1234283,
+      '2019': 0.6929416
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Michigan': {
+    cites_count: {
+      '2014': 301024,
+      '2015': 268527,
+      '2016': 199295,
+      '2017': 126048,
+      '2018': 52346,
+      '2019': 6500
+    },
+    cites_publication: {
+      '2014': 23.539568,
+      '2015': 20.26466,
+      '2016': 14.5982275,
+      '2017': 8.735741,
+      '2018': 3.5553896,
+      '2019': 0.6857987
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Johns Hopkins University': {
+    cites_count: {
+      '2014': 336540,
+      '2015': 289553,
+      '2016': 215131,
+      '2017': 136012,
+      '2018': 60136,
+      '2019': 6651
+    },
+    cites_publication: {
+      '2014': 27.685093,
+      '2015': 22.426846,
+      '2016': 16.389685,
+      '2017': 10.0148735,
+      '2018': 4.316704,
+      '2019': 0.70860857
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'EPFL - Ecole Polytechnique Federale de Lausanne': {
+    cites_count: {
+      '2014': 125349,
+      '2015': 91632,
+      '2016': 79829,
+      '2017': 47331,
+      '2018': 20578,
+      '2019': 1920
+    },
+    cites_publication: {
+      '2014': 27.00905,
+      '2015': 19.242334,
+      '2016': 17.290232,
+      '2017': 9.943487,
+      '2018': 4.5395985,
+      '2019': 0.7007299
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Tokyo': {
+    cites_count: {
+      '2014': 200808,
+      '2015': 156569,
+      '2016': 126266,
+      '2017': 80762,
+      '2018': 35265,
+      '2019': 3557
+    },
+    cites_publication: {
+      '2014': 16.63833,
+      '2015': 13.434787,
+      '2016': 10.552946,
+      '2017': 6.748162,
+      '2018': 2.8773663,
+      '2019': 0.48048088
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The Australian National University': {
+    cites_count: {
+      '2014': 83508,
+      '2015': 83468,
+      '2016': 68500,
+      '2017': 42689,
+      '2018': 17381,
+      '2019': 1981
+    },
+    cites_publication: {
+      '2014': 17.543697,
+      '2015': 17.338596,
+      '2016': 14.188069,
+      '2017': 8.690758,
+      '2018': 3.517709,
+      '2019': 0.6438089
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Hong Kong': {
+    cites_count: {
+      '2014': 91319,
+      '2015': 92575,
+      '2016': 69406,
+      '2017': 46414,
+      '2018': 19509,
+      '2019': 2475
+    },
+    cites_publication: {
+      '2014': 18.709076,
+      '2015': 18.3717,
+      '2016': 13.056057,
+      '2017': 8.420537,
+      '2018': 3.397005,
+      '2019': 0.64722806
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Duke University': {
+    cites_count: {
+      '2014': 224041,
+      '2015': 189983,
+      '2016': 135195,
+      '2017': 83294,
+      '2018': 36832,
+      '2019': 4419
+    },
+    cites_publication: {
+      '2014': 26.28972,
+      '2015': 21.699944,
+      '2016': 15.50935,
+      '2017': 9.20274,
+      '2018': 3.9233065,
+      '2019': 0.71643966
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of California Berkeley': {
+    cites_count: {
+      '2014': 6212,
+      '2015': 6689,
+      '2016': 5454,
+      '2017': 4755,
+      '2018': 2602,
+      '2019': 475
+    },
+    cites_publication: {
+      '2014': 9.721439,
+      '2015': 9.051421,
+      '2016': 6.700246,
+      '2017': 4.4109464,
+      '2018': 2.2107053,
+      '2019': 0.57228917
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of Toronto': {
+    cites_count: {
+      '2014': 375069,
+      '2015': 340825,
+      '2016': 252449,
+      '2017': 159336,
+      '2018': 67995,
+      '2019': 8373
+    },
+    cites_publication: {
+      '2014': 22.530725,
+      '2015': 20.066235,
+      '2016': 14.6389675,
+      '2017': 9.051639,
+      '2018': 3.6943765,
+      '2019': 0.6974013
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Manchester': {
+    cites_count: {
+      '2014': 159635,
+      '2015': 140641,
+      '2016': 116802,
+      '2017': 73895,
+      '2018': 30999,
+      '2019': 3763
+    },
+    cites_publication: {
+      '2014': 20.911057,
+      '2015': 17.527542,
+      '2016': 13.924892,
+      '2017': 9.084706,
+      '2018': 3.6798432,
+      '2019': 0.6707665
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Peking University': {
+    cites_count: {
+      '2014': 207637,
+      '2015': 193941,
+      '2016': 161605,
+      '2017': 109781,
+      '2018': 51204,
+      '2019': 5395
+    },
+    cites_publication: {
+      '2014': 18.045977,
+      '2015': 16.509832,
+      '2016': 12.872789,
+      '2017': 8.550588,
+      '2018': 3.6433756,
+      '2019': 0.5783662
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Kings College London': {
+    cites_count: {
+      '2014': 168766,
+      '2015': 139221,
+      '2016': 116913,
+      '2017': 80375,
+      '2018': 32838,
+      '2019': 3819
+    },
+    cites_publication: {
+      '2014': 23.928257,
+      '2015': 18.811106,
+      '2016': 15.203251,
+      '2017': 10.112607,
+      '2018': 3.951149,
+      '2019': 0.68947464
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of California Los Angeles': {
+    cites_count: {
+      '2014': 6212,
+      '2015': 6689,
+      '2016': 5454,
+      '2017': 4755,
+      '2018': 2602,
+      '2019': 475
+    },
+    cites_publication: {
+      '2014': 9.721439,
+      '2015': 9.051421,
+      '2016': 6.700246,
+      '2017': 4.4109464,
+      '2018': 2.2107053,
+      '2019': 0.57228917
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'McGill University': {
+    cites_count: {
+      '2014': 174712,
+      '2015': 159634,
+      '2016': 115448,
+      '2017': 72751,
+      '2018': 29947,
+      '2019': 3786
+    },
+    cites_publication: {
+      '2014': 20.976347,
+      '2015': 18.867037,
+      '2016': 13.842686,
+      '2017': 8.342048,
+      '2018': 3.3869035,
+      '2019': 0.6576342
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Northwestern University': {
+    cites_count: {
+      '2014': 192192,
+      '2015': 169338,
+      '2016': 133020,
+      '2017': 91670,
+      '2018': 39259,
+      '2019': 4294
+    },
+    cites_publication: {
+      '2014': 25.129707,
+      '2015': 21.637875,
+      '2016': 16.823069,
+      '2017': 10.97056,
+      '2018': 4.664805,
+      '2019': 0.7635135
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Kyoto University': {
+    cites_count: {
+      '2014': 130943,
+      '2015': 104954,
+      '2016': 89883,
+      '2017': 60509,
+      '2018': 25971,
+      '2019': 2610
+    },
+    cites_publication: {
+      '2014': 15.992062,
+      '2015': 13.170285,
+      '2016': 10.986798,
+      '2017': 7.312266,
+      '2018': 3.0936272,
+      '2019': 0.51469135
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Seoul National University': {
+    cites_count: {
+      '2014': 157682,
+      '2015': 136566,
+      '2016': 112967,
+      '2017': 77666,
+      '2018': 29147,
+      '2019': 2958
+    },
+    cites_publication: {
+      '2014': 16.701832,
+      '2015': 14.0775175,
+      '2016': 11.475721,
+      '2017': 7.557999,
+      '2018': 2.760917,
+      '2019': 0.43195093
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The Hong Kong University of Science and Technology': {
+    cites_count: {
+      '2014': 57866,
+      '2015': 53474,
+      '2016': 43657,
+      '2017': 27640,
+      '2018': 13483,
+      '2019': 1248
+    },
+    cites_publication: {
+      '2014': 23.42753,
+      '2015': 21.203014,
+      '2016': 16.430937,
+      '2017': 10.169242,
+      '2018': 4.691371,
+      '2019': 0.6738661
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The London School of Economics and Political Science': {
+    cites_count: {
+      '2014': 19754,
+      '2015': 18850,
+      '2016': 11870,
+      '2017': 10246,
+      '2018': 4220,
+      '2019': 617
+    },
+    cites_publication: {
+      '2014': 12.852309,
+      '2015': 11.557326,
+      '2016': 7.850529,
+      '2017': 5.9639115,
+      '2018': 2.4549158,
+      '2019': 0.6584845
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Melbourne': {
+    cites_count: {
+      '2014': 220227,
+      '2015': 190473,
+      '2016': 148323,
+      '2017': 99598,
+      '2018': 42475,
+      '2019': 5580
+    },
+    cites_publication: {
+      '2014': 22.976213,
+      '2015': 19.264994,
+      '2016': 14.267314,
+      '2017': 9.097369,
+      '2018': 3.6204398,
+      '2019': 0.6701093
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'KAIST - Korea Advanced Institute of Science & Technology': {
+    cites_count: {
+      '2014': 65578,
+      '2015': 54240,
+      '2016': 40569,
+      '2017': 26276,
+      '2018': 10634,
+      '2019': 1061
+    },
+    cites_publication: {
+      '2014': 16.945219,
+      '2015': 13.512706,
+      '2016': 10.036863,
+      '2017': 6.5871143,
+      '2018': 2.611493,
+      '2019': 0.42287764
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of California San Diego': {
+    cites_count: {
+      '2014': 6212,
+      '2015': 6689,
+      '2016': 5454,
+      '2017': 4755,
+      '2018': 2602,
+      '2019': 475
+    },
+    cites_publication: {
+      '2014': 9.721439,
+      '2015': 9.051421,
+      '2016': 6.700246,
+      '2017': 4.4109464,
+      '2018': 2.2107053,
+      '2019': 0.57228917
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Sydney': {
+    cites_count: {
+      '2014': 184434,
+      '2015': 180732,
+      '2016': 145528,
+      '2017': 93848,
+      '2018': 39662,
+      '2019': 5250
+    },
+    cites_publication: {
+      '2014': 19.06886,
+      '2015': 18.601482,
+      '2016': 14.301101,
+      '2017': 8.719502,
+      '2018': 3.5625618,
+      '2019': 0.68502086
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'New York University': {
+    cites_count: {
+      '2014': 178936,
+      '2015': 165704,
+      '2016': 109480,
+      '2017': 70444,
+      '2018': 32018,
+      '2019': 3687
+    },
+    cites_publication: {
+      '2014': 23.510183,
+      '2015': 20.444664,
+      '2016': 13.252633,
+      '2017': 8.235211,
+      '2018': 3.6508553,
+      '2019': 0.6435678
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Fudan University': {
+    cites_count: {
+      '2014': 129239,
+      '2015': 127740,
+      '2016': 101561,
+      '2017': 68486,
+      '2018': 30049,
+      '2019': 3631
+    },
+    cites_publication: {
+      '2014': 17.759928,
+      '2015': 16.235384,
+      '2016': 12.002009,
+      '2017': 7.5549917,
+      '2018': 3.100712,
+      '2019': 0.53334314
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of New South Wales': {
+    cites_count: {
+      '2014': 151277,
+      '2015': 139618,
+      '2016': 111845,
+      '2017': 77209,
+      '2018': 34724,
+      '2019': 4672
+    },
+    cites_publication: {
+      '2014': 18.376701,
+      '2015': 16.40249,
+      '2016': 12.512026,
+      '2017': 8.393195,
+      '2018': 3.531733,
+      '2019': 0.6957558
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Carnegie Mellon University': {
+    cites_count: {
+      '2014': 85755,
+      '2015': 70773,
+      '2016': 50275,
+      '2017': 32214,
+      '2018': 14018,
+      '2019': 1196
+    },
+    cites_publication: {
+      '2014': 22.561169,
+      '2015': 18.212301,
+      '2016': 13.25468,
+      '2017': 8.339115,
+      '2018': 3.579673,
+      '2019': 0.5662879
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'University of British Columbia': {
+    cites_count: {
+      '2014': 225930,
+      '2015': 181686,
+      '2016': 144246,
+      '2017': 88432,
+      '2018': 38826,
+      '2019': 4762
+    },
+    cites_publication: {
+      '2014': 22.85353,
+      '2015': 18.296677,
+      '2016': 14.351408,
+      '2017': 8.769536,
+      '2018': 3.6225042,
+      '2019': 0.6940679
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The University of Queensland': {
+    cites_count: {
+      '2014': 186638,
+      '2015': 160894,
+      '2016': 119357,
+      '2017': 78074,
+      '2018': 36187,
+      '2019': 4455
+    },
+    cites_publication: {
+      '2014': 21.952246,
+      '2015': 18.48294,
+      '2016': 13.116154,
+      '2017': 8.416775,
+      '2018': 3.6449435,
+      '2019': 0.65902364
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'The Chinese University of Hong Kong': {
+    cites_count: {
+      '2014': 3882,
+      '2015': 3473,
+      '2016': 3460,
+      '2017': 2905,
+      '2018': 1485,
+      '2019': 219
+    },
+    cites_publication: {
+      '2014': 18.485714,
+      '2015': 15.367256,
+      '2016': 12.862453,
+      '2017': 8.645833,
+      '2018': 3.314732,
+      '2019': 0.7398649
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  },
+  'Université PSL': {
+    cites_count: {
+      '2014': 166042,
+      '2015': 135644,
+      '2016': 119240,
+      '2017': 70870,
+      '2018': 32301,
+      '2019': 3636
+    },
+    cites_publication: {
+      '2014': 21.276525,
+      '2015': 16.483656,
+      '2016': 14.20031,
+      '2017': 8.123568,
+      '2018': 3.738109,
+      '2019': 0.6999037
+    },
+    authors_count: {},
+    authors_total: {},
+    countries_count: {},
+    countries_total: {},
+    articles_count: {},
+    conf_count: {},
+    field_count: {},
+    field_total: {},
+    access_open_count: {},
+    access_closed_count: {},
+    sponsor_count: {},
+    sponsor_total: {}
+  }
+}
+RequestError: Error: getaddrinfo ENOTFOUND 0-www-scival-com.millenium.itesm.mx
+    at new RequestError (/Users/mackaber/Tecnicas/node_modules/request-promise-core/lib/errors.js:14:15)
+    at Request.plumbing.callback (/Users/mackaber/Tecnicas/node_modules/request-promise-core/lib/plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (/Users/mackaber/Tecnicas/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at self.callback (/Users/mackaber/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:203:13)
+    at Request.onRequestError (/Users/mackaber/node_modules/request/request.js:881:8)
+    at ClientRequest.emit (events.js:203:13)
+    at TLSSocket.socketErrorListener (_http_client.js:402:9)
+    at TLSSocket.emit (events.js:203:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+  name: 'RequestError',
+  message: 'Error: getaddrinfo ENOTFOUND 0-www-scival-com.millenium.itesm.mx',
+  cause: Error: getaddrinfo ENOTFOUND 0-www-scival-com.millenium.itesm.mx
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26) {
+    errno: 'ENOTFOUND',
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: '0-www-scival-com.millenium.itesm.mx'
+  },
+  error: Error: getaddrinfo ENOTFOUND 0-www-scival-com.millenium.itesm.mx
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26) {
+    errno: 'ENOTFOUND',
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: '0-www-scival-com.millenium.itesm.mx'
+  },
+  options: {
+    jar: RequestJar { _jar: [CookieJar] },
+    url: 'https://0-www-scival-com.millenium.itesm.mx/search',
+    form: {
+      ajax: true,
+      uri: ' Los Angeles "',
+      miscfilter: 'bmy',
+      startyear: '2017',
+      endyear: '2017',
+      searchtype: '',
+      subjectfilter: true,
+      fieldnormalized: false
+    },
+    method: 'POST',
+    callback: [Function: RP$callback],
+    transform: undefined,
+    simple: true,
+    resolveWithFullResponse: false,
+    transform2xxOnly: false
+  },
+  response: undefined
+}

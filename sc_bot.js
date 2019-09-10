@@ -7,7 +7,6 @@ parseUniversities = (file) => {
 
     const results = [];
     lines = fs.readFileSync(file, "utf8").split("\n")
-    lines.shift()
     lines.forEach((line) => {
         entry = line.split(",");
         results.push({ name: entry[0], scopus_id: entry[1], scival_id: entry[3] })
@@ -196,7 +195,7 @@ getScopusValues = () => {
 
 // Initialization Stuff
 universities = {}
-university_list = parseUniversities("block_1.csv")
+university_list = parseUniversities("batch_list.csv")
 years = ["2019", "2018", "2017", "2016", "2015", "2014"]
 
 const jar = request.jar();
@@ -205,9 +204,9 @@ const jar = request.jar();
 const scival_url = "https://0-www-scival-com.millenium.itesm.mx"
 const scopus_url = "https://0-www-scopus-com.millenium.itesm.mx"
 const scival_cookies = [
-    request.cookie('JSESSIONID=13B5FF428C3A529C709B467262F7867C.mcKQsAwrVg1SzotO7VlpSA'),
+    request.cookie('JSESSIONID=CDABC99C7D9E05733020BD2CAB7A9CB0.mcKQsAwrVg1SzotO7VlpSA'),
     request.cookie('_pendo_accountId.7947f9ed-a4c7-4d3b-4528-31020bb4986f=60245'), // this one doesn't change
-    request.cookie('AWSALB=MJKvmm91SMVSO1D3hUmZr3x+X1y/6bSwBUiQOyCvZlUrztGF6lYjuGg4LLDPrY2Dvkap5Bg6nkHDaClOVqUV73E+cDdj/ToXMO5Rjc0blHbNR/7AwdhDo9jQyl47'),
+    request.cookie('AWSALB=3/7QqsRmcWKHn/iIGkpm8y7Fyp4E3BOMdUT3+GVr2yjQQuYMlx/99SIp1HDI/J0IsYHKYojI4cX7jROza+qOEgH8mO0waWoqbJnL7orjix7FEGPjUWD2V7mfp9lu'),
     request.cookie('IIIV3395912885="#BEGMD5#500953ea9d7d90d72d743d9a6567d472#ENDMD5#4-mtyr|616503|45|45|0|0"'), // (no change) This one is only necessary when accessing though millenium
 ];
 
@@ -216,10 +215,9 @@ scival_cookies.forEach((cookie) => {
 });
 
 const scopus_cookies = [
-    request.cookie('AUTH_TOKEN_COOKIE=53476e4a4868744a326a383d'),
-    request.cookie('SCSessionID=6BA12E9B5FF4A2EBBDF2F7ED26862DB4.wsnAw8kcdt7IPYLO0V48gA'),
-    request.cookie('scopusSessionUUID=2df1e622-ef68-4644-9'),
-    request.cookie('AWSELB=CB9317D502BF07938DE10C841E762B7A33C19AADB16584E315808EC23F251EF9F95A63B032A1A0E35F22536CF1709FE0D66C340EBAA31AAC5A6BDE3E4B4DACF34F3854CEEB03950EAB4AAC55A933BE79DEA87CE9B1'),
+    //request.cookie('SCSessionID=48D273AF67E35D96197F2F4870E6B519.wsnAw8kcdt7IPYLO0V48gA'),
+    //request.cookie('scopusSessionUUID=a3c3edcf-003f-48ec-b'),
+    //request.cookie('AWSELB=CB9317D502BF07938DE10C841E762B7A33C19AADB1D332297C2E6B504419F6B3D7BACE6E80036EC2B4EF60B640D4D7E13B146FEC54A31AAC5A6BDE3E4B4DACF34F3854CEEBFE8652D479C36185C36168B804F5E9F6'),
     request.cookie('IIIV3395912885="#BEGMD5#500953ea9d7d90d72d743d9a6567d472#ENDMD5#4-mtyr|616503|45|45|0|0"'),
 ]
 
@@ -237,14 +235,12 @@ updateMetric("citationCount", "Citation Count")
     .then(() => updateMetric("citesPerPub", "Citations per Publication"))
     .then(() => Promise.all(getSciValValues("cites_publication")))
     .then(() => updateMetric("scholarlyOutput", "Scholarly Output"))
-    .then(() => Promise.all(
-        getSciValValues("publications")
-        .concat(getSciValInternalValues())
-        .concat(getScopusValues())))
+    .then(() => Promise.all(getSciValValues("publications")))
+    .then(() => Promise.all(getSciValInternalValues()))
+    .then(() => Promise.all(getScopusValues()))
     .then(() => {
         console.log(universities);
-    })
-    .catch((err) => {
+    }).catch((err) => {
         console.log(universities);
         console.log(err);
-    })
+    });
