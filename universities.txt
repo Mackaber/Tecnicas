@@ -1,0 +1,199 @@
+Massachusetts Institute of Technology
+Stanford University
+Harvard University
+California Institute of Technology
+University of Oxford
+University of Cambridge
+ETH Zurich - Swiss Federal Institute of Technology
+Imperial College London
+University of Chicago
+UCL
+National University of Singapore
+Nanyang Technological University
+Princeton University
+Cornell University
+Yale University
+Columbia University
+Tsinghua University
+The University of Edinburgh
+University of Pennsylvania
+University of Michigan
+Johns Hopkins University
+EPFL - Ecole Polytechnique Federale de Lausanne
+The University of Tokyo
+The Australian National University
+The University of Hong Kong
+Duke University
+University of California
+University of Toronto
+The University of Manchester
+Peking University
+King's College London
+University of California
+McGill University
+Northwestern University
+Kyoto University
+Seoul National University
+The Hong Kong University of Science and Technology
+The London School of Economics and Political Science
+The University of Melbourne
+KAIST - Korea Advanced Institute of Science & Technology
+University of California
+The University of Sydney
+New York University
+Fudan University
+The University of New South Wales
+Carnegie Mellon University
+University of British Columbia
+The University of Queensland
+The Chinese University of Hong Kong
+Université PSL
+University of Bristol
+Delft University of Technology
+University of Wisconsin-Madison
+The University of Warwick
+City University of Hong Kong
+Brown University
+University of Amsterdam
+Tokyo Institute of Technology
+Monash University
+Shanghai Jiao Tong University
+Technical University of Munich
+Ludwig-Maximilians-Universität München
+University of Texas at Austin
+Ruprecht-Karls-Universität Heidelberg
+Ecole Polytechnique
+University of Washington
+Osaka University
+Zhejiang University
+Georgia Institute of Technology
+University of Glasgow
+University of Illinois at Urbana-Champaign
+National Taiwan University
+Universidad de Buenos Aires
+Durham University
+Sorbonne University
+The University of Sheffield
+Tohoku University
+University of Zurich
+University of Birmingham
+University of Copenhagen
+KU Leuven
+University of Nottingham
+Pohang University of Science And Technology
+University of North Carolina
+The University of Auckland
+Korea University
+Rice University
+Universiti Malaya
+The Ohio State University
+Lomonosov Moscow State University
+The University of Western Australia
+Lund University
+Boston University
+University of Leeds
+Pennsylvania State University
+University of Southampton
+University of St Andrews
+University of Science and Technology of China
+Eindhoven University of Technology
+Purdue University
+Sungkyunkwan University
+University of California
+Washington University in St. Louis
+KTH Royal Institute of Technology
+Trinity College Dublin
+The Hong Kong Polytechnic University
+Yonsei University
+University of Geneva
+University of Alberta
+University of Helsinki
+Nagoya University
+Technical University of Denmark
+Universidad Nacional Autónoma de México 
+The University of Adelaide
+University of Southern California
+KIT
+Uppsala University
+Universidade de São Paulo
+Queen Mary University of London
+University of Groningen
+Humboldt-Universität zu Berlin
+Leiden University
+Nanjing University
+Utrecht University
+Wageningen University & Research
+Kyushu University
+University of Maryland
+Chalmers University of Technology
+Hokkaido University
+Freie Universitaet Berlin
+Lancaster University
+Pontificia Universidad Católica de Chile
+University of California
+University of Oslo
+University of Pittsburgh
+CentraleSupélec
+Ghent University
+University of Bern
+Aalto University
+Aarhus University
+Michigan State University
+Newcastle University
+RWTH Aachen University
+Cardiff University
+McMaster University
+Technische Universität Berlin
+Emory University
+Université de Montréal
+University of Lausanne
+Hanyang University
+École Normale Supérieure de Lyon
+The Hebrew University of Jerusalem
+The University of Exeter
+Politecnico di Milano
+University of Minnesota
+University of Bath
+Universidad Autónoma de Madrid
+University of Basel
+University of Technology Sydney
+Indian Institute of Technology Bombay
+National Tsing Hua University
+University of Waterloo
+Université catholique de Louvain
+University of Liverpool
+Universitat de Barcelona
+Sant'Anna - Scuola Universitaria Superiore Pisa
+Eberhard Karls Universität Tübingen
+University of California
+Indian Institute of Science
+University of Bergen
+Indian Institute of Technology Delhi
+University of Aberdeen
+University of Twente
+Scuola Normale Superiore di Pisa
+University of Vienna
+University of Otago
+Tecnológico de Monterrey
+Erasmus University Rotterdam
+Queen’s University Belfast
+Alma Mater Studiorum - University of Bologna
+University of Florida
+Dartmouth College
+Universiti Kebangsaan Malaysia
+University of Rochester
+Case Western Reserve University
+Albert-Ludwigs-Universitaet Freiburg
+Vrije Universiteit Brussel
+King Fahd University of Petroleum & Minerals
+University of Colorado Boulder
+Technische Universität Dresden
+University of Virginia
+Universitat Autònoma de Barcelona
+University College Dublin
+University of Reading
+Vanderbilt University
+University of Göttingen
+Keio University
+Vienna University of Technology
+Stockholm University

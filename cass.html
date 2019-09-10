@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+    <meta charset="utf-8">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <META NAME="verify-v1" CONTENT="M5q4CxMVJyf1WE5UwVmHfV8q3LK1vh/3qmo894V0Pqg=">
+    <script type="text/javascript">
+        (window.NREUM || (NREUM = {})).loader_config = {
+            xpid: "VQQPUFdVCRADVVVXAwABVA=="
+        };
+        window.NREUM || (NREUM = {}), __nr_require = function(t, n, e) {
+            function r(e) {
+                if (!n[e]) {
+                    var o = n[e] = {
+                        exports: {}
+                    };
+                    t[e][0].call(o.exports, function(n) {
+                        var o = t[e][1][n];
+                        return r(o || n)
+                    }, o, o.exports)
+                }
+                return n[e].exports
+            }
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var o = 0; o < e.length; o++) r(e[o]);
+            return r
+        }({
+            1: [function(t, n, e) {
+                function r(t) {
+                    try {
+                        s.console && console.log(t)
+                    } catch (n) {}
+                }
+                var o, i = t("ee"),
+                    a = t(18),
+                    s = {};
+                try {
+                    o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (s.console = !0, o.indexOf("dev") !== -1 && (s.dev = !0), o.indexOf("nr_dev") !== -1 && (s.nrDev = !0))
+                } catch (c) {}
+                s.nrDev && i.on("internal-error", function(t) {
+                    r(t.stack)
+                }), s.dev && i.on("fn-err", function(t, n, e) {
+                    r(e.stack)
+                }), s.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(s, function(t, n) {
+                    return t
+                }).join(", ")))
+            }, {}],
+            2: [function(t, n, e) {
+                function r(t, n, e, r, s) {
+                    try {
+                        p ? p -= 1 : o(s || new UncaughtException(t, n, e), !0)
+                    } catch (f) {
+                        try {
+                            i("ierr", [f, c.now(), !0])
+                        } catch (d) {}
+                    }
+                    return "function" == typeof u && u.apply(this, a(arguments))
+                }
+
+                function UncaughtException(t, n, e) {
+                    this.message = t || "Uncaught error with no additional information", this.sourceURL = n, this.line = e
+                }
+
+                function o(t, n) {
+                    var e = n ? null : c.now();
+                    i("err", [t, e])
+                }
+                var i = t("handle"),
+                    a = t(19),
+                    s = t("ee"),
+                    c = t("loader"),
+                    f = t("gos"),
+                    u = window.onerror,
+                    d = !1,
+                    l = "nr@seenError",
+                    p = 0;
+                c.features.err = !0, t(1), window.onerror = r;
+                try {
+                    throw new Error
+                } catch (h) {
+                    "stack" in h && (t(8), t(7), "addEventListener" in window && t(5), c.xhrWrappable && t(9), d = !0)
+                }
+                s.on("fn-start", function(t, n, e) {
+                    d && (p += 1)
+                }), s.on("fn-err", function(t, n, e) {
+                    d && !e[l] && (f(e, l, function() {
+                        return !0
+                    }), this.thrown = !0, o(e))
+                }), s.on("fn-end", function() {
+                    d && !this.thrown && p > 0 && (p -= 1)
+                }), s.on("internal-error", function(t) {
+                    i("ierr", [t, c.now(), !0])
+                })
+            }, {}],
+            3: [function(t, n, e) {
+                t("loader").features.ins = !0
+            }, {}],
+            4: [function(t, n, e) {
+                function r(t) {}
+                if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                    var o = t("ee"),
+                        i = t("handle"),
+                        a = t(8),
+                        s = t(7),
+                        c = "learResourceTimings",
+                        f = "addEventListener",
+                        u = "resourcetimingbufferfull",
+                        d = "bstResource",
+                        l = "resource",
+                        p = "-start",
+                        h = "-end",
+                        m = "fn" + p,
+                        w = "fn" + h,
+                        v = "bstTimer",
+                        y = "pushState",
+                        g = t("loader");
+                    g.features.stn = !0, t(6);
+                    var x = NREUM.o.EV;
+                    o.on(m, function(t, n) {
+                        var e = t[0];
+                        e instanceof x && (this.bstStart = g.now())
+                    }), o.on(w, function(t, n) {
+                        var e = t[0];
+                        e instanceof x && i("bst", [e, n, this.bstStart, g.now()])
+                    }), a.on(m, function(t, n, e) {
+                        this.bstStart = g.now(), this.bstType = e
+                    }), a.on(w, function(t, n) {
+                        i(v, [n, this.bstStart, g.now(), this.bstType])
+                    }), s.on(m, function() {
+                        this.bstStart = g.now()
+                    }), s.on(w, function(t, n) {
+                        i(v, [n, this.bstStart, g.now(), "requestAnimationFrame"])
+                    }), o.on(y + p, function(t) {
+                        this.time = g.now(), this.startPath = location.pathname + location.hash
+                    }), o.on(y + h, function(t) {
+                        i("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                    }), f in window.performance && (window.performance["c" + c] ? window.performance[f](u, function(t) {
+                        i(d, [window.performance.getEntriesByType(l)]), window.performance["c" + c]()
+                    }, !1) : window.performance[f]("webkit" + u, function(t) {
+                        i(d, [window.performance.getEntriesByType(l)]), window.performance["webkitC" + c]()
+                    }, !1)), document[f]("scroll", r, {
+                        passive: !0
+                    }), document[f]("keypress", r, !1), document[f]("click", r, !1)
+                }
+            }, {}],
+            5: [function(t, n, e) {
+                function r(t) {
+                    for (var n = t; n && !n.hasOwnProperty(u);) n = Object.getPrototypeOf(n);
+                    n && o(n)
+                }
+
+                function o(t) {
+                    s.inPlace(t, [u, d], "-", i)
+                }
+
+                function i(t, n) {
+                    return t[1]
+                }
+                var a = t("ee").get("events"),
+                    s = t(21)(a, !0),
+                    c = t("gos"),
+                    f = XMLHttpRequest,
+                    u = "addEventListener",
+                    d = "removeEventListener";
+                n.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function(t, n) {
+                    var e = t[1],
+                        r = c(e, "nr@wrapped", function() {
+                            function t() {
+                                if ("function" == typeof e.handleEvent) return e.handleEvent.apply(e, arguments)
+                            }
+                            var n = {
+                                object: t,
+                                "function": e
+                            }[typeof e];
+                            return n ? s(n, "fn-", null, n.name || "anonymous") : e
+                        });
+                    this.wrapped = t[1] = r
+                }), a.on(d + "-start", function(t) {
+                    t[1] = this.wrapped || t[1]
+                })
+            }, {}],
+            6: [function(t, n, e) {
+                var r = t("ee").get("history"),
+                    o = t(21)(r);
+                n.exports = r;
+                var i = window.history && window.history.constructor && window.history.constructor.prototype,
+                    a = window.history;
+                i && i.pushState && i.replaceState && (a = i), o.inPlace(a, ["pushState", "replaceState"], "-")
+            }, {}],
+            7: [function(t, n, e) {
+                var r = t("ee").get("raf"),
+                    o = t(21)(r),
+                    i = "equestAnimationFrame";
+                n.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function(t) {
+                    t[0] = o(t[0], "fn-")
+                })
+            }, {}],
+            8: [function(t, n, e) {
+                function r(t, n, e) {
+                    t[0] = a(t[0], "fn-", null, e)
+                }
+
+                function o(t, n, e) {
+                    this.method = e, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, e)
+                }
+                var i = t("ee").get("timer"),
+                    a = t(21)(i),
+                    s = "setTimeout",
+                    c = "setInterval",
+                    f = "clearTimeout",
+                    u = "-start",
+                    d = "-";
+                n.exports = i, a.inPlace(window, [s, "setImmediate"], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [f, "clearImmediate"], f + d), i.on(c + u, r), i.on(s + u, o)
+            }, {}],
+            9: [function(t, n, e) {
+                function r(t, n) {
+                    d.inPlace(n, ["onreadystatechange"], "fn-", s)
+                }
+
+                function o() {
+                    var t = this,
+                        n = u.context(t);
+                    t.readyState > 3 && !n.resolved && (n.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, y, "fn-", s)
+                }
+
+                function i(t) {
+                    g.push(t), h && (b ? b.then(a) : w ? w(a) : (E = -E, R.data = E))
+                }
+
+                function a() {
+                    for (var t = 0; t < g.length; t++) r([], g[t]);
+                    g.length && (g = [])
+                }
+
+                function s(t, n) {
+                    return n
+                }
+
+                function c(t, n) {
+                    for (var e in t) n[e] = t[e];
+                    return n
+                }
+                t(5);
+                var f = t("ee"),
+                    u = f.get("xhr"),
+                    d = t(21)(u),
+                    l = NREUM.o,
+                    p = l.XHR,
+                    h = l.MO,
+                    m = l.PR,
+                    w = l.SI,
+                    v = "readystatechange",
+                    y = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"],
+                    g = [];
+                n.exports = u;
+                var x = window.XMLHttpRequest = function(t) {
+                    var n = new p(t);
+                    try {
+                        u.emit("new-xhr", [n], n), n.addEventListener(v, o, !1)
+                    } catch (e) {
+                        try {
+                            u.emit("internal-error", [e])
+                        } catch (r) {}
+                    }
+                    return n
+                };
+                if (c(p, x), x.prototype = p.prototype, d.inPlace(x.prototype, ["open", "send"], "-xhr-", s), u.on("send-xhr-start", function(t, n) {
+                        r(t, n), i(n)
+                    }), u.on("open-xhr-start", r), h) {
+                    var b = m && m.resolve();
+                    if (!w && !m) {
+                        var E = 1,
+                            R = document.createTextNode(E);
+                        new h(a).observe(R, {
+                            characterData: !0
+                        })
+                    }
+                } else f.on("fn-end", function(t) {
+                    t[0] && t[0].type === v || a()
+                })
+            }, {}],
+            10: [function(t, n, e) {
+                function r() {
+                    var t = window.NREUM,
+                        n = t.info.accountID || null,
+                        e = t.info.agentID || null,
+                        r = t.info.trustKey || null,
+                        i = "btoa" in window && "function" == typeof window.btoa;
+                    if (!n || !e || !i) return null;
+                    var a = {
+                        v: [0, 1],
+                        d: {
+                            ty: "Browser",
+                            ac: n,
+                            ap: e,
+                            id: o.generateCatId(),
+                            tr: o.generateCatId(),
+                            ti: Date.now()
+                        }
+                    };
+                    return r && n !== r && (a.d.tk = r), btoa(JSON.stringify(a))
+                }
+                var o = t(16);
+                n.exports = {
+                    generateTraceHeader: r
+                }
+            }, {}],
+            11: [function(t, n, e) {
+                function r(t) {
+                    var n = this.params,
+                        e = this.metrics;
+                    if (!this.ended) {
+                        this.ended = !0;
+                        for (var r = 0; r < p; r++) t.removeEventListener(l[r], this.listener, !1);
+                        n.aborted || (e.duration = s.now() - this.startTime, this.loadCaptureCalled || 4 !== t.readyState ? null == n.status && (n.status = 0) : a(this, t), e.cbTime = this.cbTime, d.emit("xhr-done", [t], t), c("xhr", [n, e, this.startTime]))
+                    }
+                }
+
+                function o(t, n) {
+                    var e = t.responseType;
+                    if ("json" === e && null !== n) return n;
+                    var r = "arraybuffer" === e || "blob" === e || "json" === e ? t.response : t.responseText;
+                    return w(r)
+                }
+
+                function i(t, n) {
+                    var e = f(n),
+                        r = t.params;
+                    r.host = e.hostname + ":" + e.port, r.pathname = e.pathname, t.sameOrigin = e.sameOrigin
+                }
+
+                function a(t, n) {
+                    t.params.status = n.status;
+                    var e = o(n, t.lastSize);
+                    if (e && (t.metrics.rxSize = e), t.sameOrigin) {
+                        var r = n.getResponseHeader("X-NewRelic-App-Data");
+                        r && (t.params.cat = r.split(", ").pop())
+                    }
+                    t.loadCaptureCalled = !0
+                }
+                var s = t("loader");
+                if (s.xhrWrappable) {
+                    var c = t("handle"),
+                        f = t(12),
+                        u = t(10).generateTraceHeader,
+                        d = t("ee"),
+                        l = ["load", "error", "abort", "timeout"],
+                        p = l.length,
+                        h = t("id"),
+                        m = t(15),
+                        w = t(14),
+                        v = window.XMLHttpRequest;
+                    s.features.xhr = !0, t(9), d.on("new-xhr", function(t) {
+                        var n = this;
+                        n.totalCbs = 0, n.called = 0, n.cbTime = 0, n.end = r, n.ended = !1, n.xhrGuids = {}, n.lastSize = null, n.loadCaptureCalled = !1, t.addEventListener("load", function(e) {
+                            a(n, t)
+                        }, !1), m && (m > 34 || m < 10) || window.opera || t.addEventListener("progress", function(t) {
+                            n.lastSize = t.loaded
+                        }, !1)
+                    }), d.on("open-xhr-start", function(t) {
+                        this.params = {
+                            method: t[0]
+                        }, i(this, t[1]), this.metrics = {}
+                    }), d.on("open-xhr-end", function(t, n) {
+                        "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && n.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid);
+                        var e = !1;
+                        if ("init" in NREUM && "distributed_tracing" in NREUM.init && (e = !!NREUM.init.distributed_tracing.enabled), e && this.sameOrigin) {
+                            var r = u();
+                            r && n.setRequestHeader("newrelic", r)
+                        }
+                    }), d.on("send-xhr-start", function(t, n) {
+                        var e = this.metrics,
+                            r = t[0],
+                            o = this;
+                        if (e && r) {
+                            var i = w(r);
+                            i && (e.txSize = i)
+                        }
+                        this.startTime = s.now(), this.listener = function(t) {
+                            try {
+                                "abort" !== t.type || o.loadCaptureCalled || (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof n.onload)) && o.end(n)
+                            } catch (e) {
+                                try {
+                                    d.emit("internal-error", [e])
+                                } catch (r) {}
+                            }
+                        };
+                        for (var a = 0; a < p; a++) n.addEventListener(l[a], this.listener, !1)
+                    }), d.on("xhr-cb-time", function(t, n, e) {
+                        this.cbTime += t, n ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof e.onload || this.end(e)
+                    }), d.on("xhr-load-added", function(t, n) {
+                        var e = "" + h(t) + !!n;
+                        this.xhrGuids && !this.xhrGuids[e] && (this.xhrGuids[e] = !0, this.totalCbs += 1)
+                    }), d.on("xhr-load-removed", function(t, n) {
+                        var e = "" + h(t) + !!n;
+                        this.xhrGuids && this.xhrGuids[e] && (delete this.xhrGuids[e], this.totalCbs -= 1)
+                    }), d.on("addEventListener-end", function(t, n) {
+                        n instanceof v && "load" === t[0] && d.emit("xhr-load-added", [t[1], t[2]], n)
+                    }), d.on("removeEventListener-end", function(t, n) {
+                        n instanceof v && "load" === t[0] && d.emit("xhr-load-removed", [t[1], t[2]], n)
+                    }), d.on("fn-start", function(t, n, e) {
+                        n instanceof v && ("onload" === e && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = s.now()))
+                    }), d.on("fn-end", function(t, n) {
+                        this.xhrCbStart && d.emit("xhr-cb-time", [s.now() - this.xhrCbStart, this.onload, n], n)
+                    })
+                }
+            }, {}],
+            12: [function(t, n, e) {
+                n.exports = function(t) {
+                    var n = document.createElement("a"),
+                        e = window.location,
+                        r = {};
+                    n.href = t, r.port = n.port;
+                    var o = n.href.split("://");
+                    !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = n.hostname || e.hostname, r.pathname = n.pathname, r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname);
+                    var i = !n.protocol || ":" === n.protocol || n.protocol === e.protocol,
+                        a = n.hostname === document.domain && n.port === e.port;
+                    return r.sameOrigin = i && (!n.hostname || a), r
+                }
+            }, {}],
+            13: [function(t, n, e) {
+                function r() {}
+
+                function o(t, n, e) {
+                    return function() {
+                        return i(t, [f.now()].concat(s(arguments)), n ? null : this, e), n ? void 0 : this
+                    }
+                }
+                var i = t("handle"),
+                    a = t(18),
+                    s = t(19),
+                    c = t("ee").get("tracer"),
+                    f = t("loader"),
+                    u = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = u);
+                var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                    l = "api-",
+                    p = l + "ixn-";
+                a(d, function(t, n) {
+                    u[n] = o(l + n, !0, "api")
+                }), u.addPageAction = o(l + "addPageAction", !0), u.setCurrentRouteName = o(l + "routeName", !0), n.exports = newrelic, u.interaction = function() {
+                    return (new r).get()
+                };
+                var h = r.prototype = {
+                    createTracer: function(t, n) {
+                        var e = {},
+                            r = this,
+                            o = "function" == typeof n;
+                        return i(p + "tracer", [f.now(), t, e], r),
+                            function() {
+                                if (c.emit((o ? "" : "no-") + "fn-start", [f.now(), r, o], e), o) try {
+                                    return n.apply(this, arguments)
+                                } catch (t) {
+                                    throw c.emit("fn-err", [arguments, this, t], e), t
+                                } finally {
+                                    c.emit("fn-end", [f.now()], e)
+                                }
+                            }
+                    }
+                };
+                a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(t, n) {
+                    h[n] = o(p + n)
+                }), newrelic.noticeError = function(t, n) {
+                    "string" == typeof t && (t = new Error(t)), i("err", [t, f.now(), !1, n])
+                }
+            }, {}],
+            14: [function(t, n, e) {
+                n.exports = function(t) {
+                    if ("string" == typeof t && t.length) return t.length;
+                    if ("object" == typeof t) {
+                        if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+                        if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+                        if (!("undefined" != typeof FormData && t instanceof FormData)) try {
+                            return JSON.stringify(t).length
+                        } catch (n) {
+                            return
+                        }
+                    }
+                }
+            }, {}],
+            15: [function(t, n, e) {
+                var r = 0,
+                    o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+                o && (r = +o[1]), n.exports = r
+            }, {}],
+            16: [function(t, n, e) {
+                function r() {
+                    function t() {
+                        return n ? 15 & n[e++] : 16 * Math.random() | 0
+                    }
+                    var n = null,
+                        e = 0,
+                        r = window.crypto || window.msCrypto;
+                    r && r.getRandomValues && (n = r.getRandomValues(new Uint8Array(31)));
+                    for (var o, i = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", s = 0; s < i.length; s++) o = i[s], "x" === o ? a += t().toString(16) : "y" === o ? (o = 3 & t() | 8, a += o.toString(16)) : a += o;
+                    return a
+                }
+
+                function o() {
+                    function t() {
+                        return n ? 15 & n[e++] : 16 * Math.random() | 0
+                    }
+                    var n = null,
+                        e = 0,
+                        r = window.crypto || window.msCrypto;
+                    r && r.getRandomValues && Uint8Array && (n = r.getRandomValues(new Uint8Array(31)));
+                    for (var o = [], i = 0; i < 16; i++) o.push(t().toString(16));
+                    return o.join("")
+                }
+                n.exports = {
+                    generateUuid: r,
+                    generateCatId: o
+                }
+            }, {}],
+            17: [function(t, n, e) {
+                function r(t, n) {
+                    if (!o) return !1;
+                    if (t !== o) return !1;
+                    if (!n) return !0;
+                    if (!i) return !1;
+                    for (var e = i.split("."), r = n.split("."), a = 0; a < r.length; a++)
+                        if (r[a] !== e[a]) return !1;
+                    return !0
+                }
+                var o = null,
+                    i = null,
+                    a = /Version\/(\S+)\s+Safari/;
+                if (navigator.userAgent) {
+                    var s = navigator.userAgent,
+                        c = s.match(a);
+                    c && s.indexOf("Chrome") === -1 && s.indexOf("Chromium") === -1 && (o = "Safari", i = c[1])
+                }
+                n.exports = {
+                    agent: o,
+                    version: i,
+                    match: r
+                }
+            }, {}],
+            18: [function(t, n, e) {
+                function r(t, n) {
+                    var e = [],
+                        r = "",
+                        i = 0;
+                    for (r in t) o.call(t, r) && (e[i] = n(r, t[r]), i += 1);
+                    return e
+                }
+                var o = Object.prototype.hasOwnProperty;
+                n.exports = r
+            }, {}],
+            19: [function(t, n, e) {
+                function r(t, n, e) {
+                    n || (n = 0), "undefined" == typeof e && (e = t ? t.length : 0);
+                    for (var r = -1, o = e - n || 0, i = Array(o < 0 ? 0 : o); ++r < o;) i[r] = t[n + r];
+                    return i
+                }
+                n.exports = r
+            }, {}],
+            20: [function(t, n, e) {
+                n.exports = {
+                    exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart
+                }
+            }, {}],
+            21: [function(t, n, e) {
+                function r(t) {
+                    return !(t && t instanceof Function && t.apply && !t[a])
+                }
+                var o = t("ee"),
+                    i = t(19),
+                    a = "nr@original",
+                    s = Object.prototype.hasOwnProperty,
+                    c = !1;
+                n.exports = function(t, n) {
+                    function e(t, n, e, o) {
+                        function nrWrapper() {
+                            var r, a, s, c;
+                            try {
+                                a = this, r = i(arguments), s = "function" == typeof e ? e(r, a) : e || {}
+                            } catch (f) {
+                                l([f, "", [r, a, o], s])
+                            }
+                            u(n + "start", [r, a, o], s);
+                            try {
+                                return c = t.apply(a, r)
+                            } catch (d) {
+                                throw u(n + "err", [r, a, d], s), d
+                            } finally {
+                                u(n + "end", [r, a, c], s)
+                            }
+                        }
+                        return r(t) ? t : (n || (n = ""), nrWrapper[a] = t, d(t, nrWrapper), nrWrapper)
+                    }
+
+                    function f(t, n, o, i) {
+                        o || (o = "");
+                        var a, s, c, f = "-" === o.charAt(0);
+                        for (c = 0; c < n.length; c++) s = n[c], a = t[s], r(a) || (t[s] = e(a, f ? s + o : o, i, s))
+                    }
+
+                    function u(e, r, o) {
+                        if (!c || n) {
+                            var i = c;
+                            c = !0;
+                            try {
+                                t.emit(e, r, o, n)
+                            } catch (a) {
+                                l([a, e, r, o])
+                            }
+                            c = i
+                        }
+                    }
+
+                    function d(t, n) {
+                        if (Object.defineProperty && Object.keys) try {
+                            var e = Object.keys(t);
+                            return e.forEach(function(e) {
+                                Object.defineProperty(n, e, {
+                                    get: function() {
+                                        return t[e]
+                                    },
+                                    set: function(n) {
+                                        return t[e] = n, n
+                                    }
+                                })
+                            }), n
+                        } catch (r) {
+                            l([r])
+                        }
+                        for (var o in t) s.call(t, o) && (n[o] = t[o]);
+                        return n
+                    }
+
+                    function l(n) {
+                        try {
+                            t.emit("internal-error", n)
+                        } catch (e) {}
+                    }
+                    return t || (t = o), e.inPlace = f, e.flag = a, e
+                }
+            }, {}],
+            ee: [function(t, n, e) {
+                function r() {}
+
+                function o(t) {
+                    function n(t) {
+                        return t && t instanceof r ? t : t ? c(t, s, i) : i()
+                    }
+
+                    function e(e, r, o, i) {
+                        if (!l.aborted || i) {
+                            t && t(e, r, o);
+                            for (var a = n(o), s = m(e), c = s.length, f = 0; f < c; f++) s[f].apply(a, r);
+                            var d = u[g[e]];
+                            return d && d.push([x, e, r, a]), a
+                        }
+                    }
+
+                    function p(t, n) {
+                        y[t] = m(t).concat(n)
+                    }
+
+                    function h(t, n) {
+                        var e = y[t];
+                        if (e)
+                            for (var r = 0; r < e.length; r++) e[r] === n && e.splice(r, 1)
+                    }
+
+                    function m(t) {
+                        return y[t] || []
+                    }
+
+                    function w(t) {
+                        return d[t] = d[t] || o(e)
+                    }
+
+                    function v(t, n) {
+                        f(t, function(t, e) {
+                            n = n || "feature", g[e] = n, n in u || (u[n] = [])
+                        })
+                    }
+                    var y = {},
+                        g = {},
+                        x = {
+                            on: p,
+                            addEventListener: p,
+                            removeEventListener: h,
+                            emit: e,
+                            get: w,
+                            listeners: m,
+                            context: n,
+                            buffer: v,
+                            abort: a,
+                            aborted: !1
+                        };
+                    return x
+                }
+
+                function i() {
+                    return new r
+                }
+
+                function a() {
+                    (u.api || u.feature) && (l.aborted = !0, u = l.backlog = {})
+                }
+                var s = "nr@context",
+                    c = t("gos"),
+                    f = t(18),
+                    u = {},
+                    d = {},
+                    l = n.exports = o();
+                l.backlog = u
+            }, {}],
+            gos: [function(t, n, e) {
+                function r(t, n, e) {
+                    if (o.call(t, n)) return t[n];
+                    var r = e();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, n, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (i) {}
+                    return t[n] = r, r
+                }
+                var o = Object.prototype.hasOwnProperty;
+                n.exports = r
+            }, {}],
+            handle: [function(t, n, e) {
+                function r(t, n, e, r) {
+                    o.buffer([t], r), o.emit(t, n, e)
+                }
+                var o = t("ee").get("handle");
+                n.exports = r, r.ee = o
+            }, {}],
+            id: [function(t, n, e) {
+                function r(t) {
+                    var n = typeof t;
+                    return !t || "object" !== n && "function" !== n ? -1 : t === window ? 0 : a(t, i, function() {
+                        return o++
+                    })
+                }
+                var o = 1,
+                    i = "nr@id",
+                    a = t("gos");
+                n.exports = r
+            }, {}],
+            loader: [function(t, n, e) {
+                function r() {
+                    if (!E++) {
+                        var t = b.info = NREUM.info,
+                            n = p.getElementsByTagName("script")[0];
+                        if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && n)) return u.abort();
+                        f(g, function(n, e) {
+                            t[n] || (t[n] = e)
+                        }), c("mark", ["onload", a() + b.offset], null, "api");
+                        var e = p.createElement("script");
+                        e.src = "https://" + t.agent, n.parentNode.insertBefore(e, n)
+                    }
+                }
+
+                function o() {
+                    "complete" === p.readyState && i()
+                }
+
+                function i() {
+                    c("mark", ["domContent", a() + b.offset], null, "api")
+                }
+
+                function a() {
+                    return R.exists && performance.now ? Math.round(performance.now()) : (s = Math.max((new Date).getTime(), s)) - b.offset
+                }
+                var s = (new Date).getTime(),
+                    c = t("handle"),
+                    f = t(18),
+                    u = t("ee"),
+                    d = t(17),
+                    l = window,
+                    p = l.document,
+                    h = "addEventListener",
+                    m = "attachEvent",
+                    w = l.XMLHttpRequest,
+                    v = w && w.prototype;
+                NREUM.o = {
+                    ST: setTimeout,
+                    SI: l.setImmediate,
+                    CT: clearTimeout,
+                    XHR: w,
+                    REQ: l.Request,
+                    EV: l.Event,
+                    PR: l.Promise,
+                    MO: l.MutationObserver
+                };
+                var y = "" + location,
+                    g = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-1130.min.js"
+                    },
+                    x = w && v && v[h] && !/CriOS/.test(navigator.userAgent),
+                    b = n.exports = {
+                        offset: s,
+                        now: a,
+                        origin: y,
+                        features: {},
+                        xhrWrappable: x,
+                        userAgent: d
+                    };
+                t(13), p[h] ? (p[h]("DOMContentLoaded", i, !1), l[h]("load", r, !1)) : (p[m]("onreadystatechange", o), l[m]("onload", r)), c("mark", ["firstbyte", s], null, "api");
+                var E = 0,
+                    R = t(20)
+            }, {}]
+        }, {}, ["loader", 2, 11, 4, 3]);
+    </script>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ojplelelocihfchkdaebocpankipadmp">
+    <META NAME="robots" CONTENT="NOARCHIVE, NOFOLLOW, NOINDEX">
+    <META NAME="description" CONTENT="Elsevier’s Scopus, the largest abstract and citation database of peer-reviewed literature. Search and access research from the science, technology, medicine, social sciences and arts and humanities fields.">
+    <META NAME="referrer" CONTENT="unsafe-url">
+    <style type="text/css">
+        .jsEnabled {
+            display: none !important;
+        }
+    </style>
+    <link rel="SHORTCUT ICON" href="/static/proteus-images/favicon.ico?ver=1.0">
+    <script type="text/javascript" src="https://acw.elsevier.com/SSOCore/jawr_loader.js"></script>
+    <script type="text/javascript" src="/gzip_N806072365/bundles/masterjquery.js"></script>
+    <script type="text/javascript">
+        JAWR.loader.script('/bundles/jcars.js');
+        JAWR.loader.style('/bundles/jcars.css', 'all');
+    </script>
+    <script language="javascript" type="text/javascript">
+        window.$ = window.jQuery;
+    </script>
+    <script type="text/javascript" src="/gzip_N1606155294/bundles/remoteAccMsg.js"></script>
+    <script>
+        var feMetricUrl = new Object();
+        feMetricUrl = 'https://els-eum.elsst.com';
+    </script>
+    <link rel="stylesheet" type="text/css" media="all" href="/gzip_1178592005/bundles/ScopusMasterLayout.css" />
+    <script type="text/javascript" src="/gzip_1580166745/bundles/AffilResultsTopMaster.js"></script>
+    <script src="https://b2btagmgr.azalead.com/tag?az=aWRTdWJzY3JpYmVyPTIyMjYmaWRTaXRlPTIzMTYmb3JpZ2luPXd3dy5lbHNldmllci5jb20mY3VzdG9tPW5vbmU=" type="application/javascript">
+    </script>
+    <script type="text/javascript">
+        var MendeleybookmarkletUrl = 'https://0-www-mendeley-com.millenium.itesm.mx/minified/bookmarklet.js';
+        writeJavaScriptCookie();
+        var isPreviewPage = false;
+        var isLoggedInUser = false;
+        var isShibUser = false;
+        var isIndividuallyAuthenticated = false;
+    </script>
+    <script type="text/javascript">
+        writeJavaScriptCookie();
+        isLoggedInUser = 'true' === 'false';
+        isShibUser = ('IPRANGE' === "SHIBBOLETHANON") ? true : false;
+        var isIndividual = 'true' === 'false';
+        isIndividuallyAuthenticated = isLoggedInUser || isIndividual;
+    </script>
+    <script type="text/javascript">
+        var isIDPlusEnabled = 'true' === 'false';
+        var isCarsForIDPlus = 'true' === 'false';
+        var isCARSBulkRegisterPage = 'true' === '';
+        var isCARSRegisterPage = 'true' === '';
+        var isCARSPathChoicePage = 'true' === '';
+        var isCARSLoginFullPage = 'true' === '';
+    </script>
+    <script>
+        var smapiVars = {};
+        smapiVars["AFW_AUTHOR_MAX_SELECT_COUNT"] = "50";
+        smapiVars["MAX_SOURCE_RESULTS_DISPLAYED"] = "1000";
+    </script>
+    <title>
+        Scopus - Affiliation search results Massachusetts Institute of Technology
+    </title>
+    <script type="text/javascript" src="/gzip_1831354866/bundles/SiteCatalystTop.js"></script>
+    <script type="text/javascript">
+        var pageData = {
+            page: {},
+            visitor: {}
+        };
+        pageDataUtil.loadPageDataObject("false", "104.214.75.120", "en_US", "", "14680889", "(14680889,U|322404,D|60245,A|84531,S|5,P|1,PL)(SCOPUS,CON|ANON_IP,ACCESS_TYPE)",
+            "ONLINE_REGISTERED", "60245", "84531", "Technological and Higher Education Institute of Monterrey");
+    </script>
+    <script src="//assets.adobedtm.com/376c5346e33126fdb6b2dbac81e307cbacfd7935/satelliteLib-c74074f9c1cbd68a79f7ff7103e0cdc14b7e5f41.js"></script>
+</head>
+
+<body onLoad="onBodyLoad();" data-page-type="">
+    <div id="mainSkipNav" class="skipnav list-group">
+        <a href="#skip1" class="list-group-item">Skip Main Navigation Links</a>
+        <a href="#skiptofooter" class="list-group-item">Jump to Footer</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid mainRow" id="rowMain">
+            <div id="contentContainer" class="col-md-12 fullHeightHack content">
+                <div class="row">
+                    <div class="col-md-12 globalNavigation" id="globalNavigation">
+                        <header>
+                            <a name="top" id="top"></a>
+                            <input type="hidden" id="txGid" value="12ED7CFAF1AF91E57AEDDFB31ED77FEF.wsnAw8kcdt7IPYLO0V48gA:224" />
+                            <script>
+                                var prs = {
+                                    rt: function(label, ts) {
+                                        this[label] = (ts || ts == 0 ? ts : new Date().getTime());
+                                    }
+                                };
+                                var continuePcrRecording = true;
+                                var PCR_SCR_ATTRIBUTE_NAME = 'data-reportRenderTime';
+
+                                function recordRendering(primaryContentElements, mutations) {
+                                    if (continuePcrRecording) {
+                                        primaryContentElements.each(function() {
+                                            for (var i = 0; i < mutations.length; i++) {
+                                                var changedNode = mutations[i].target;
+                                                if (this === changedNode || $.contains(this, changedNode)) {
+                                                    var contentSignificance = $(this).attr(PCR_SCR_ATTRIBUTE_NAME);
+                                                    prs.rt(contentSignificance);
+                                                }
+                                            }
+                                        });
+                                    }
+                                };
+                                MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+                                var domChangeListener = new MutationObserver(function(mutations) {
+                                    // fired when the document changes - look for PCR / SCR changes
+                                    recordRendering($('[' + PCR_SCR_ATTRIBUTE_NAME + '="pcr"]'), mutations);
+                                    recordRendering($('[' + PCR_SCR_ATTRIBUTE_NAME + '^="scr"]'), mutations);
+                                });
+                                domChangeListener.observe(document, {
+                                    childList: true,
+                                    attributes: true,
+                                    characterData: true,
+                                    subtree: true
+                                });
+                            </script>
+                            <div class="col-md-1">
+                                <h1 class="logo">
+                                    <a href="/home.uri?zone=header&amp;origin=searchbasic" title="Select to go to the Scopus main search page">
+Scopus			
+</a>
+                                </h1>
+                            </div>
+                            <nav class="navbar col-md-11 globalNavigation">
+                                <ul id="globalLinks" class="nav navbar-nav navbar-right verticalAlign">
+                                    <li>
+                                        <a href="/search/form.uri?zone=TopNavBar&amp;origin=AffiliationNamesList&amp;display=affiliationLookup" title="Search for documents, authors and affiliations." target="_top">
+                                            <span class="anchorText">Search</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="sourceBrowseId" href="/sources.uri?zone=TopNavBar&amp;origin=AffiliationNamesList" title="Browse or search the indexed sources/journals by title." target="_top">
+                                            <span class="anchorText">Sources</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="headerMyAlerts" href="/alert/form/MyAlerts.uri?zone=TopNavBar&amp;origin=AffiliationNamesList" title="Manage your e-mail alerts." target="_top">
+                                            <span class="anchorText">Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/results/storedList.uri?listId=myDocList&amp;origin=AffiliationNamesList&amp;zone=TopNavBar" title="Manage your temporary list of documents and saved lists." target="_top">
+                                            <span class="anchorText">Lists</span>
+                                        </a>
+                                    </li>
+                                    <li id="helpMenu">
+                                        <div class="dropdownGroup">
+                                            <button type="button" title="Select to display help and Contact options" class="btn btn-link dropdown-toggle icon-wide" id="helpMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="anchorText">Help</span> 
+<span class="ico-navigate-down" aria-hidden="true"></span>
+</button>
+                                            <div id="helpMenuDropdown" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="helpMenu">
+                                                <span class="dropdownHeader"></span>
+                                                <span class="dropdownContent">
+<span class="dropdownContentWrap">
+<span id="dropdownTitle" class="row" tabindex="-1"></span>
+                                                <ul class="list-unstyled">
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="#" target="globalHelp" onClick="return openGlobalhelp('/standard/help.uri?zone=TopNavBar&amp;origin=AffiliationNamesList&amp;topic=11421','globalHelp',760,570,0)" title="View Scopus help files (opens in a new window)" class="secondaryLink">
+                                                            <span class="anchorText">Help</span>
+                                                        </a>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="#" target="globalHelp" onClick="return openGlobalhelp('/standard/tutorial.uri?zone=TopNavBar&amp;origin=AffiliationNamesList&amp;module=','globalHelp',760,570,0)" title="Select to view tutorials (opens in a new window)" class="secondaryLink">
+                                                            <span class="anchorText">Tutorials</span>
+                                                        </a>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="#" target="_blank" title="Contact us (opens in a new window)" onClick="return openGlobalhelp('/standard/contactForm.uri?zone=TopNavBar&amp;origin=AffiliationNamesList','globalHelp',760,570,0)" class="secondaryLink">
+                                                            <span class="anchorText">Contact us</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeHelpMenu" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only">Close help menu</span>
+</button>
+                                                </span>
+                                                </span>
+                                                <span class="dropdownFooter"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="sciValLink">
+                                        <a href="https://0-www-scival-com.millenium.itesm.mx/home" target="_blank" class="externalLink">
+                                            <span class="anchorText">SciVal</span>
+                                            <span class="ico-external-link-after" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li id="registerLogin">
+                                        <div xmlns:cars="http://cars-services.elsevier.com/cars/server" class="CARS_panelClass" id="login-panel" displaystyle="">
+                                            <div displaystyle="" id="login_page_main" class="    ">
+                                                <div id="login_maincontroller" class="    " displaystyle=":right">
+                                                    <a id="login_reglink" displaystyle="" href="https://0-www-scopus-com.millenium.itesm.mx/customer/profile/display.uri" title="Register a username and password for using alerts and other personal features">Register</a>
+                                                    <a
+                                                        onclick="javascript:return CARS.submitCheck(&quot;toggleBackground,toggle&quot;,this)" href="javascript:void(0);" displaystyle="" id="login_loginlink" aria-haspopup="true" title="Login To Scopus" aria-controls="login_pop_container">
+                                                        <div class="CARS_displayNone">
+                                                            <script type="text/javascript">
+                                                                if (true) {
+                                                                    var metainfo = new CARS.metadata();
+                                                                    metainfo.elementId = 'login_loginlink_expand';
+                                                                    metainfo.action = 'toggle';
+                                                                    metainfo.dependency = 'login_loginlink_expand,login_loginlink_collapse,login_pop_container';
+                                                                    metainfo.name = 'login_loginlink_expand';
+                                                                    CARS_dataList.push(metainfo);
+                                                                }
+                                                            </script>
+                                                        </div>
+                                                        <img displaystyle=":expandImage" id="login_loginlink_expand">
+                                                        <div class="CARS_displayNone">
+                                                            <script type="text/javascript">
+                                                                if (true) {
+                                                                    var metainfo = new CARS.metadata();
+                                                                    metainfo.elementId = 'login_loginlink_collapse';
+                                                                    metainfo.action = 'toggle';
+                                                                    metainfo.dependency = 'login_loginlink_collapse,login_loginlink_expand,login_pop_container';
+                                                                    metainfo.name = 'login_loginlink_collapse';
+                                                                    CARS_dataList.push(metainfo);
+                                                                }
+                                                            </script>
+                                                        </div>
+                                                        <img displaystyle=":collapseImage:displaynone" id="login_loginlink_collapse">Login</a>
+                                                        <div class="CARS_displayNone">
+                                                            <script type="text/javascript">
+                                                                if (true) {
+                                                                    var metainfo = new CARS.metadata();
+                                                                    metainfo.elementId = 'login_loginlink';
+                                                                    metainfo.action = 'toggleBackground,toggle';
+                                                                    metainfo.dependency = 'login_pop_container';
+                                                                    if (metainfo.action.indexOf("toggle") != -1) {
+                                                                        metainfo.dependency = metainfo.dependency + "," + metainfo.elementId + "_expand," + metainfo.elementId + "_collapse";
+                                                                        metainfo.executeonload = '';
+                                                                        metainfo.togglevarid = '';
+                                                                        metainfo.requireddependency = '';
+                                                                    }
+                                                                    if (metainfo.action.indexOf("onchange") != -1) {
+                                                                        metainfo.selecttextdependency = '';
+                                                                        metainfo.executeonload = '';
+                                                                        metainfo.defaultselectvalue = '';
+                                                                        metainfo.togglevarid = '';
+                                                                        metainfo.requireddependency = '';
+                                                                    }
+                                                                    metainfo.name = '';
+                                                                    metainfo.validationcheck = '';
+                                                                    metainfo.error = '';
+                                                                    metainfo.togglestyle = ':background';
+                                                                    metainfo.togglestyleid = 'login_loginlink';
+                                                                    CARS_dataList.push(metainfo);
+                                                                }
+                                                            </script>
+                                                        </div>
+                                                </div>
+                                                <div class="CARS_clear"></div>
+                                                <div id="login_pop_container" class="    " displaystyle=":paddingsmall:right:displaynone:background:border" focusrequired="true">
+                                                    <div id="login_pop_container_logform" class="    " displaystyle=":background:left:widthsmall">
+                                                        <div class="CARS_groupTitle">Login using your Elsevier credentials</div>
+                                                        <form action="https://0-www-scopus-com.millenium.itesm.mx/customer/authenticate.uri" method="POST" enctype="form-data">
+                                                            <div id="login_username" displaystyle="" class="    ">
+                                                                <label for="username"><span>Username:</span></label><input type="text" name="username" id="username" aria-required="true" focusonload="true"><span displaystyle="" class="CARS_red">*</span>
+                                                            </div>
+                                                            <div id="login_password" displaystyle="" class="    ">
+                                                                <label for="login_password-password"><span>Password:</span></label><input type="password" name="password" id="login_password-password" aria-required="true"><span displaystyle="" class="CARS_red">*</span>
+                                                            </div>
+                                                            <div id="login_rem_forgot_submit" class="    " displaystyle="">
+                                                                <div displaystyle=":displayblock:paddingL120" class="    ">
+                                                                    <input type="checkbox" id="login_rem_check" name="remember_flag" checked value="true" title="Remember me"><label for="login_rem_check">Remember me</label>
+                                                                </div>
+                                                                <div id="login_submit_btn" displaystyle=":displayinline:paddingL120" class="    ">
+                                                                    <input type="submit" title="Login" aria-label="Login" value="Login" name="submit">
+                                                                </div>
+                                                                <a id="login_not_register" displaystyle="" href="https://0-www-scopus-com.millenium.itesm.mx/customer/profile/display.uri" title="Register a username and password for using alerts and other personal features">Not Registered?<span displaystyle=":hidespan">Register a username and password for using alerts and other personal features</span></a>
+                                                            </div>
+                                                            <a id="login_forgot_pass" displaystyle=":fontverysmall:paddingL120:paddingT10" onclick="javascript:return CARS.submitCheck(&quot;openPopUp&quot;,this)" href="https://0-www-scopus-com.millenium.itesm.mx/customer/reminder.uri" title="Opens in a new window."
+                                                                target="_popup">Forgotten your username or password?<span displaystyle=":hidespan">Opens in a new window.</span></a>
+                                                            <div class="CARS_displayNone">
+                                                                <script type="text/javascript">
+                                                                    if (true) {
+                                                                        var metainfo = new CARS.metadata();
+                                                                        metainfo.elementId = 'login_forgot_pass';
+                                                                        metainfo.action = 'openPopUp';
+                                                                        metainfo.dependency = '';
+                                                                        if (metainfo.action.indexOf("toggle") != -1) {
+                                                                            metainfo.dependency = metainfo.dependency + "," + metainfo.elementId + "_expand," + metainfo.elementId + "_collapse";
+                                                                            metainfo.executeonload = '';
+                                                                            metainfo.togglevarid = '';
+                                                                            metainfo.requireddependency = '';
+                                                                        }
+                                                                        if (metainfo.action.indexOf("onchange") != -1) {
+                                                                            metainfo.selecttextdependency = '';
+                                                                            metainfo.executeonload = '';
+                                                                            metainfo.defaultselectvalue = '';
+                                                                            metainfo.togglevarid = '';
+                                                                            metainfo.requireddependency = '';
+                                                                        }
+                                                                        metainfo.name = '';
+                                                                        metainfo.validationcheck = '';
+                                                                        metainfo.error = '';
+                                                                        metainfo.togglestyle = '';
+                                                                        metainfo.togglestyleid = '';
+                                                                        CARS_dataList.push(metainfo);
+                                                                    }
+                                                                </script>
+                                                            </div>
+                                                            <input type="hidden" name="auth_type" value="LOGIN_PASSWORD"><input type="hidden" name="http_method_name" value="POST"><input type="hidden" name="shibboleth_fence" value="true"><input type="hidden"
+                                                                name="isClaimingRemoteAccess" value="FALSE"><input type="hidden" name="remember_path_flag" value="false"><input type="hidden" name="path_choice" value=""><input type="hidden" name="path_choice_exists"
+                                                                value="false"><input type="hidden" name="acct_name" value=""><input type="hidden" name="dept_name" value=""><input type="hidden" name="PII_Req" value=""><input type="hidden" name="cars_cookie_flag"
+                                                                value="TRUE"><input type="hidden" name="origin" value="loginBox"><input type="hidden" name="zone" value="main">
+                                                        </form>
+                                                    </div>
+                                                    <div id="login_pop_container_socialform" class="    " displaystyle=":left:widthsmall:background">
+                                                        <form action="https://0-www-scopus-com.millenium.itesm.mx/customer/authenticate.uri" method="POST" enctype="form-data">
+                                                            <a onclick="javascript:return CARS.submitCheck(&quot;submit&quot;,this,&quot;true&quot;)" href="javascript:void(0);" displaystyle="" id="login_open_athens" title="Log in using OpenAthens">OpenAthens login</a>
+                                                            <input
+                                                                type="hidden" name="federation_id" value="6025"><input type="hidden" name="institution_id" value="88190"><input type="hidden" name="auth_type" value="SHIBBOLETH"><input type="hidden" name="domain_name" value="https://0-www-scopus-com.millenium.itesm.mx/customer/authenticate.uri">
+                                                        </form>
+                                                        <div id="institutionAvail" class="    " displaystyle="">
+                                                            <div class="CARS_groupTitle">Login via your institution</div>
+                                                            <div id="rem-inst-choice-list" class="    " displaystyle="displayblock"></div>
+                                                            <a id="login_other_inst" displaystyle="" href="https://0-www-scopus-com.millenium.itesm.mx/customer/institutionchoice.uri?shibboleth_fence=TRUE&amp;origin=loginBox&amp;zone=main" title="Other Institution login">Other Institution login</a>
+                                                            <div id="login-inst-choice-fed-inst-list" class="    " displaystyle=":displaynone">
+                                                                <div id="login-inst-choice-list" class="    " displaystyle="displayblock"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="remotegroup" class="    " displaystyle="">
+                                                            <form action="https://0-www-scopus-com.millenium.itesm.mx/customer/authenticate/manra.uri" method="POST" enctype="form-data">
+                                                                <a onclick="javascript:return CARS.submitCheck(&quot;submit&quot;,this,&quot;true&quot;)" href="javascript:void(0);" displaystyle="" id="login_remote_access" title="Apply for Remote Access">Apply for Remote Access</a>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="spineBtn">
+                                        <button type="button" class="btn btn-lg btn-link" id="spineToggle" aria-controls="spineContainer" aria-expanded="false">
+<span class="hamburgerIcon"></span> 
+<span class="sr-only">
+Expand navigation/Collapse navigation
+</span>
+</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div id="userNameError" class="errorInput displayNone" role="alert">You must enter a username.</div>
+                            <div id="passwordError" class="errorInput displayNone" role="alert">You must enter your password.</div>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="contentWrapper" class="col-md-12">
+                        <div id="alertArea" aria-live="polite" aria-atomic="true" class="hidden">
+                        </div>
+                        <!-- alerts section - end-->
+                        <div id="container" role="main">
+                            <a name="skip1" id="skip1"></a>
+                            <form id="affiliationLookupResultsFormId" name="AffiliationLookupResultsForm" class="noMargin" action="/results/affiliationLookup.uri" method="post">
+                                <input id="queryString" name="queryString" type="hidden" value="AFFIL(Massachusetts Institute of Technology)" />
+                                <input id="preferredName" name="preferredName" type="hidden" value="" />
+                                <input id="showFullList" name="showFullList" type="hidden" value="false" />
+                                <input id="selectionPageSearch" name="selectionPageSearch" type="hidden" value="afsp" />
+                                <input id="clustering" name="clustering" type="hidden" value="" />
+                                <input id="cluster" name="cluster" type="hidden" value="" />
+                                <input id="cc" name="cc" type="hidden" value="10" />
+                                <input id="cl" name="cl" type="hidden" value="t" />
+                                <input id="contextBox" name="contextBox" type="hidden" value="" />
+                                <input id="sortClusterField" name="sortClusterField" type="hidden" value="" />
+                                <input id="affiliationId" name="affiliationId" type="hidden" value="" />
+                                <input id="sot" name="sot" type="hidden" value="" />
+                                <input id="selectDeselectAllAttempt" name="selectDeselectAllAttempt" type="hidden" value="" />
+                                <input id="oldResultsPerPage" name="oldResultsPerPage" type="hidden" value="20" />
+                                <input id="advancedSearchURL" name="advancedSearchURL" type="hidden" value="https://0-www-scopus-com.millenium.itesm.mx/search/form.uri?display=advanced&amp;txGid=a004d6cfa6135cb242fbb4d97316a5b1" />
+                                <input id="advancedSrchQuery" name="advancedSrchQuery" type="hidden" value="" />
+                                <input id="origQuery" name="origQuery" type="hidden" value="" />
+                                <input id="origTerm1" name="origTerm1" type="hidden" value="" />
+                                <input id="origTerm2" name="origTerm2" type="hidden" value="" />
+                                <input id="partialQuery" name="partialQuery" type="hidden" value="" />
+                                <input id="endPage" name="endPage" type="hidden" value="1" />
+                                <input id="firstPage" name="firstPage" type="hidden" value="" />
+                                <input id="displayPerPageFlag" name="displayPerPageFlag" type="hidden" value="f" />
+                                <input id="selectedResultsCount" name="selectedResultsCount" type="hidden" value="0" />
+                                <input id="clickedLink" name="clickedLink" type="hidden" value="" />
+                                <input id="offset" name="offset" type="hidden" value="1" />
+                                <input id="previousResultCount" name="previousResultCount" type="hidden" value="14" />
+                                <input id="pageItems" name="pageItems" type="hidden" value="60022195!60024592!60001001!60006320!60014228!60026293!60003561!60002243!60100145!60022717!60015009!60113291!60097091!60113353" />
+                                <input id="st1" name="st1" type="hidden" value="" />
+                                <input id="st2" name="st2" type="hidden" value="" />
+                                <input id="s" name="s" type="hidden" value="" />
+                                <input id="connector" name="connector" type="hidden" value="" />
+                                <input id="field1" name="field1" type="hidden" value="" />
+                                <input id="field2" name="field2" type="hidden" value="" />
+                                <input id="sid" name="sid" type="hidden" value="" />
+                                <input id="previousSelectionCount" name="previousSelectionCount" type="hidden" value="0" />
+                                <input id="ignoreTooManyValidation" name="ignoreTooManyValidation" type="hidden" value="" />
+                                <input id="returnToButtonAvailable" name="returnToButtonAvailable" type="hidden" value="false" />
+                                <input id="origin" name="origin" value="AffiliationNamesList" type="hidden" value="SearchAffiliationLookup" />
+                                <input id="allAffilCityClusterCategories" name="allAffilCityClusterCategories" type="hidden" value="Cambridge###Lexington###Singapore City###Westford" />
+                                <input id="allAffilCntryClusterCategories" name="allAffilCntryClusterCategories" type="hidden" value="United States###Singapore" />
+                                <input id="affilName" name="affilName" value="Massachusetts Institute of Technology" type="hidden" value="Massachusetts Institute of Technology" />
+                                <input id="affilCity" name="affilCity" type="hidden" value="" />
+                                <input id="affilCntry" name="affilCntry" type="hidden" value="" />
+                                <input id="poppUp" name="poppUp" type="hidden" value="" />
+                                <input id="editAlertReturnFlag" name="editAlertReturnFlag" type="hidden" value="" />
+                                <input type='hidden' name='recordid' />
+                                <input type='hidden' name='sort' value='' />
+                                <input type='hidden' name='currentSort' value='afcnt-f' />
+                                <input id="clusterAttributeValue" name="clusterAttributeValue" type="hidden" value="" />
+                                <script language="javascript" type="text/javascript">
+                                    <!--
+                                    var tooManySelectedErrorMsg = '';
+                                    //-->
+                                </script>
+                                <script language="javascript" type="text/javascript">
+                                    <!--
+                                    var authorIdsEnabled = "true";
+                                    var message = "";
+                                    var resultsCount = "14";
+                                    var pageType = "affiliations";
+                                    var maxProfileSelectionLimit = 800;
+                                    var maxAffilFeedbackSelectionLimit = 100;
+                                    var previousSelectedCount = 0;
+                                    var pageToPageSelections = 0;
+                                    var popupSelectionCount = -1;
+                                    var maxNumberOfGroups = 20;
+                                    validatePopupSelection(popupSelectionCount, 0);
+                                    //-->
+                                </script>
+                                <div class="row">
+                                    <div class="col-md-12 docResultsTitleBar">
+                                        <header>
+                                            <h1 class="documentHeader">
+                                                <span class="resultsCount"> 14</span> Affiliation results - Massachusetts Institute of Technology
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <a href="/standard/help.uri?topic=11215" target="_new" title="Learn more about Scopus Affiliation Identifier (Opens in a new window)" class="btn-link">
+                                                            <span class="anchorText">About Scopus Affiliation Identifier</span>
+                                                            <span class="ico-help fontMedium" aria-hidden="true"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </h1>
+                                        </header>
+                                    </div>
+                                </div>
+                                <nav id="resultsMenu" class="navbar">
+                                    <h2 class="navbar-brand">
+                                        Affiliation (<span class="querySrchTerm"><em>Massachusetts Institute of Technology</em></span>)
+                                    </h2>
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <button type="button" id="affilEdit" data-popup="" class="btn-link noPaddingLeft" data-href="https://0-www-scopus-com.millenium.itesm.mx/search/form.uri?display=affiliationLookup&origin=SearchAffiliationLookup&returnTo=affiliationLookup&txGid=a004d6cfa6135cb242fbb4d97316a5b1"
+                                                title='Edit search query'>
+<span class="ico-pencel" aria-hidden="true"></span>
+<span class="btnText">Edit</span>
+</button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div id="resultsPageAlertArea" aria-live="polite" aria-atomic="true"></div>
+                                <div class="marketingTextZone hidden">
+                                    <div class="alert alert-info" role="alert">
+                                        <div class="row flexDisplay flexAlignTop flexNoWrap">
+                                            <span class="icon" aria-hidden="true">i</span>
+                                            <div class="alertContent" id="affilResultsTextZoneHolder">
+                                                <div class="col-md-12" style="white-space:normal;">
+                                                    <h4 class="headerText noMargin">Scopus Affiliation Identifier</h4>
+                                                    <p class="bodyText noMargin">The Affiliation Identifier distinguishes between affiliations by assigning each affiliation in Scopus a unique number and grouping together all of the documents affiliated with an organization. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                    </div>
+                                </div>
+                                <div class="row wrapper resultsList">
+                                    <div id="refinePanelCol" class="col-md-3">
+                                        <div id="refinePanel">
+                                            <div class="affilResultsLeftColumn floatL" id="leftColumn">
+                                                <div id="NAVIGATOR_HEADER" class="displayNone"></div>
+                                                <div class="rightTriangle rightTrianglePosition hidden" id="rightTrianglePosition"></div>
+                                                <a href="#" title='Select to display Refine results options' class="btn btn-link btn-lg hidden" id="showRefineSearchResultCol" onclick="openCollapseLeftSideBar('open');">
+                                                    <span class="glyphicon glyphicon glyphicon-forward triangleColor"></span>
+                                                </a>
+                                                <div id="sRefineResults">
+                                                    <div id="RefineResults" class="authAffilTop">
+                                                        <div class="hideRefine">
+                                                            <h2 class="font-size-md margin-bottom-sm">Refine results
+                                                            </h2>
+                                                            <div id="leftTrianglePosition" class="leftTriangle leftTrianglePosition"></div>
+                                                            <a href="#" title='Select to hide Refine results options' class="btn btn-link btn-lg" id="hideRefineSearchResultCol" onclick="openCollapseLeftSideBar('collapse');">
+                                                                <span class="btn_collapse_Cluster glyphicon glyphicon glyphicon-backward triangleColor" id="hideRefineHdr" title='Select to hide Refine results options'>&nbsp;</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="refineButtons">
+                                                            <ul class="list-inline">
+                                                                <li>
+                                                                    <input type="submit" title='Limit to selected items' alt='Limit to selected items' disabled="disabled" class="btn btn-primary btn-sm btnLmtExcDisabled limitToButton" value='Limit to' name="limitTo">
+                                                                </li>
+                                                                <li>
+                                                                    <input type="submit" title='Exclude selected items' alt='Exclude selected items' class="btn btn-primary btn-sm btnLmtExcDisabled excludeButton" value='Exclude' disabled="disabled" name="exclude">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="clusterData">
+                                                        <script language="javascript" type="text/javascript">
+                                                            <!--
+                                                            var toggleOpenCluster = "Click to open";
+                                                            var toggleCloseCluster = "Click to close";
+                                                            //-->
+                                                        </script>
+                                                        <div id="hidden_src" class="displayNone">
+                                                            af
+                                                        </div>
+                                                        <div id="navigators">
+                                                            <div id="overlayBuffer" class="hidden"></div>
+                                                            <div lang="cat_CITY" id="navigator_1" class="panel-group dummyNav">
+                                                                <span id="checkArray_affilcity" class="hidden"></span>
+                                                                <div class="panel panel-default">
+                                                                    <div id="heading_affilcity" class="panel-heading active">
+                                                                        <h3 class="panel-title">
+                                                                            <div id="collapse_affilcity_hidden">
+                                                                                <button id="collapse_affilcity_link" title='Click to close' type="button" data-target="body_affilcity" class="btn btn-link btn-block text-left" aria-expanded="true" data-toggle="collapse" onclick="collapseSection('affilcity','collapse')">
+<span class="btnText"> City</span> 
+<span id="checkCount_affilcity" class="hidden small greyText"></span> <span
+class="ico-navigate-down" aria-hidden="false"></span>
+</button>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div id="body_affilcity" class="body panel-collapse collapse in dummyBody">
+                                                                        <div id="viewMoreCount_affilcity" class="hidden">5</div>
+                                                                        <div id="viewLessCount_affilcity" class="hidden">0</div>
+                                                                        <div id="clusterAttribute_affilcity" class="panel-body">
+                                                                            <ul id="cluster_affilcity">
+                                                                                <li id="li_Cambridge" class="checkbox">
+                                                                                    <input id="city_Cambridge" name="selectedAffilCityClusterCategories" type="checkbox" value="Cambridge" /><input type="hidden" name="_selectedAffilCityClusterCategories"
+                                                                                        value="on" />
+                                                                                    <label class="checkbox-label" for="city_Cambridge">
+<span class="btnText">Cambridge</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCityClusterCategories" />
+                                                                                    <input type="hidden" value="Cambridge" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for Cambridge'>
+<span class="badge">(<span class="btnText">11</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_Cambridge"></div>
+                                                                                </li>
+                                                                                <li id="li_Lexington" class="checkbox">
+                                                                                    <input id="city_Lexington" name="selectedAffilCityClusterCategories" type="checkbox" value="Lexington" /><input type="hidden" name="_selectedAffilCityClusterCategories"
+                                                                                        value="on" />
+                                                                                    <label class="checkbox-label" for="city_Lexington">
+<span class="btnText">Lexington</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCityClusterCategories" />
+                                                                                    <input type="hidden" value="Lexington" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for Lexington'>
+<span class="badge">(<span class="btnText">1</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_Lexington"></div>
+                                                                                </li>
+                                                                                <li id="li_SingaporeCity" class="checkbox">
+                                                                                    <input id="city_SingaporeCity" name="selectedAffilCityClusterCategories" type="checkbox" value="Singapore City" /><input type="hidden" name="_selectedAffilCityClusterCategories"
+                                                                                        value="on" />
+                                                                                    <label class="checkbox-label" for="city_SingaporeCity">
+<span class="btnText">Singapore City</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCityClusterCategories" />
+                                                                                    <input type="hidden" value="Singapore City" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for Singapore City'>
+<span class="badge">(<span class="btnText">1</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_SingaporeCity"></div>
+                                                                                </li>
+                                                                                <li id="li_Westford" class="checkbox">
+                                                                                    <input id="city_Westford" name="selectedAffilCityClusterCategories" type="checkbox" value="Westford" /><input type="hidden" name="_selectedAffilCityClusterCategories"
+                                                                                        value="on" />
+                                                                                    <label class="checkbox-label" for="city_Westford">
+<span class="btnText">Westford</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCityClusterCategories" />
+                                                                                    <input type="hidden" value="Westford" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for Westford'>
+<span class="badge">(<span class="btnText">1</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_Westford"></div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <input type="hidden" name="clsCityCount" value="4" />
+                                                                        <ul class="refineResultsViewLink list-inline">
+                                                                            <li id="refineResultsViewLink_affilcity">
+                                                                                <a class="hidden" href="javascript:viewFewerClusters('affilcity');" title="View less" id="viewFewerLink_affilcity">
+                                                                                    <span class="btnText">View less</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="pull-right">
+                                                                                <a class='hidden' href="javascript:viewMoreClusters('AffiliationNamesList','afsp','affilcity','selectedAffilCityClusterCategories','4');" title="View all" id="viewAllLink_affilcity">
+                                                                                    <span class="btnText">
+View all
+</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal fade resultViewMoreModal" id="navigatorOverlay_affilcity" tabindex="-1" role="dialog" aria-labelledby="navigatorOverlay_affilcityLabel" data-clusterType="affilcity">
+                                                                    <div class="modal-dialog modal-xxl modalVscroll" role="document">
+                                                                        <div class="modal-content navOverlayItems">
+                                                                            <div id="resultViewMoreModalMainContent_affilcity">
+                                                                                <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+                                                                                    <h4 class="modal-title pull-left" id="overlayHeading_">
+                                                                                        <span class="clusterOverlayHdr">Filter by City</span>
+                                                                                    </h4>
+                                                                                    <div class="pull-right refineResultModalSelect marginRight1">
+                                                                                        <label class="sortSelectLabel" for="afflCityClus">
+Filter:
+</label>
+                                                                                        <select id="afflCityClus" name="afclac" class="smallSelect">
+<option value="# of results"># of results</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option>
+</select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal-body refineResultModalBody">
+                                                                                    <div class="row body" id="overlayBody_affilcity">
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilcity1">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilcity2">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilcity3">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilcity4">
+                                                                                        </ul>
+                                                                                        <div class="clear"></div>
+                                                                                    </div>
+                                                                                    <ul id="overlayul_affilcity" class="displayNone">
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <div id="overlayFooter_affilcity">
+                                                                                        <div class="pull-right">
+                                                                                            <input type="submit" disabled="disabled" name="limitTo" value='Limit to' class="btnLmtExcDisabled limitToButton btn btn-primary btn-sm" aria-live="assertive" title="Limit to selected items" alt="Limit to selected items">
+                                                                                            <input type="submit" disabled="disabled" name="exclude" value='Exclude' class="btnLmtExcDisabled excludeButton btn btn-primary btn-sm" aria-live="assertive" title="Exclude selected items" alt="Exclude selected items">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div lang="cat_COUNRTY" id="navigator_2" class="panel-group dummyNav">
+                                                                <span id="checkArray_affilctry" class="hidden"></span>
+                                                                <div class="panel panel-default">
+                                                                    <div id="heading_affilctry" class="panel-heading active">
+                                                                        <h3 class="panel-title">
+                                                                            <div id="collapse_affilctry_hidden">
+                                                                                <button id="collapse_affilctry_link" title='Click to close' type="button" data-target="body_affilctry" class="btn btn-link btn-block text-left" aria-expanded="true" data-toggle="collapse" onclick="collapseSection('affilctry','collapse')">
+<span class="btnText"> Country/Territory</span> 
+<span id="checkCount_affilctry" class="hidden small greyText"></span>
+<span class="ico-navigate-down" aria-hidden="false"></span>
+</button>
+                                                                            </div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div id="body_affilctry" class="body panel-collapse collapse in dummyBody">
+                                                                        <div id="viewMoreCount_affilctry" class="hidden">5</div>
+                                                                        <div id="viewLessCount_affilctry" class="hidden">0</div>
+                                                                        <div id="clusterAttribute_affilctry" class="panel-body">
+                                                                            <ul id="cluster_affilctry">
+                                                                                <li id="li_UnitedStates" class="checkbox">
+                                                                                    <input id="UnitedStates" name="selectedAffilCntryClusterCategories" type="checkbox" value="United States" /><input type="hidden" name="_selectedAffilCntryClusterCategories"
+                                                                                        value="on" />
+                                                                                    <label class="checkbox-label" for="UnitedStates">
+<span class="btnText">United States</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCntryClusterCategories" />
+                                                                                    <input type="hidden" value="United States" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for United States'>
+<span class="badge">(<span class="btnText">13</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_UnitedStates"></div>
+                                                                                </li>
+                                                                                <li id="li_Singapore" class="checkbox">
+                                                                                    <input id="Singapore" name="selectedAffilCntryClusterCategories" type="checkbox" value="Singapore" /><input type="hidden" name="_selectedAffilCntryClusterCategories" value="on"
+                                                                                    />
+                                                                                    <label class="checkbox-label" for="Singapore">
+<span class="btnText">Singapore</span>
+</label>
+                                                                                    <input type="hidden" value="selectedAffilCntryClusterCategories" />
+                                                                                    <input type="hidden" value="Singapore" />
+                                                                                    <button class='btn-link btn-sm dropdownGroup' data-toggle="modal" title='Show preview  for Singapore'>
+<span class="badge">(<span class="btnText">1</span>)</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+                                                                                    <div id="cib_Div_Overlay_Singapore"></div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <input type="hidden" name="clsCntryCount" value="2" />
+                                                                        <ul class="refineResultsViewLink list-inline">
+                                                                            <li id="refineResultsViewLink_affilctry">
+                                                                                <a class="hidden" href="javascript:viewFewerClusters('affilctry');" title="View less" id="viewFewerLink_affilctry">
+                                                                                    <span class="btnText">View less</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="pull-right">
+                                                                                <a class='hidden' href="javascript:viewMoreClusters('AffiliationNamesList','afsp','affilctry','selectedAffilCntryClusterCategories','4');" title="View all" id="viewAllLink_affilctry">
+                                                                                    <span class="btnText">View all</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal fade resultViewMoreModal" id="navigatorOverlay_affilctry" tabindex="-1" role="dialog" aria-labelledby="navigatorOverlay_affilctryLabel" data-clusterType="affilctry">
+                                                                    <div class="modal-dialog modal-xxl modalVscroll" role="document">
+                                                                        <div class="modal-content navOverlayItems">
+                                                                            <div id="resultViewMoreModalMainContent_affilctry">
+                                                                                <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+                                                                                    <h4 class="modal-title pull-left" id="overlayHeading_">
+                                                                                        <span class="clusterOverlayHdr">Filter by Country/Territory</span>
+                                                                                    </h4>
+                                                                                    <div class="pull-right refineResultModalSelect marginRight1">
+                                                                                        <label class="sortSelectLabel" for="afflCntryClus">
+Filter:
+</label>
+                                                                                        <select id="afflCntryClus" name="afclcn" class="smallSelect">
+<option value="# of results"># of results</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option>
+</select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal-body refineResultModalBody">
+                                                                                    <div class="row body" id="overlayBody_affilctry">
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilctry1">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilctry2">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilctry3">
+                                                                                        </ul>
+                                                                                        <ul class="refineResults col-xs-3 overlayUL" id="overlayul_affilctry4">
+                                                                                        </ul>
+                                                                                        <div class="clear"></div>
+                                                                                    </div>
+                                                                                    <ul id="overlayul_affilctry" class="displayNone">
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <div id="overlayFooter_affilctry">
+                                                                                        <div class="pull-right">
+                                                                                            <input type="submit" disabled="disabled" name="limitTo" value='Limit to' class="btnLmtExcDisabled limitToButton btn btn-primary btn-sm" aria-live="assertive" title="Limit to selected items" alt="Limit to selected items">
+                                                                                            <input type="submit" disabled="disabled" name="exclude" value='Exclude' class="btnLmtExcDisabled excludeButton btn btn-primary btn-sm" aria-live="assertive" title="Exclude selected items" alt="Exclude selected items">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal fade" id="resultLeftSidebarModal" tabindex="-1" role="dialog" aria-labelledby="resultLeftSidebarModalLabel">
+                                                            <div class="modal-dialog modal-xxl modalVscroll" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+                                                                    </div>
+                                                                    <div class="modal-body"></div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+<span class="btnText">Close</span>
+</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <script type="text/javascript" charset="utf-8">
+                                                            jQuery(document).ready(function() {
+                                                                var affilClusterState = "";
+                                                                var affilMatchLevelCount = 0;
+                                                                var affilCountryCount = 0;
+                                                                var affilCityCount = 0;
+                                                                affilCountryCount = "2";
+                                                                affilCityCount = "4";
+                                                                affilMatchLevelCount = "";
+                                                                if (affilClusterState != null && affilClusterState.length > 0) {
+                                                                    showClusterStateInSessionForAffil(affilClusterState);
+                                                                }
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                    <div id="clusterFooter">
+                                                        <input id="displayClusteringCountFlag" name="displayClusteringCountFlag" type="hidden" value="f" />
+                                                        <div class="authAffilTop paddingB7">
+                                                            <div class="refineButtons">
+                                                                <ul class="list-inline">
+                                                                    <li><input type="submit" title='Limit to selected items' alt='Limit to selected items' disabled="disabled" class="btn btn-primary btn-sm btnLmtExcDisabled limitToButton" value='Limit to'
+                                                                            name="limitTo"></li>
+                                                                    <li><input type="submit" title='Exclude selected items' alt='Exclude selected items' class="btn btn-primary btn-sm btnLmtExcDisabled excludeButton" value='Exclude' disabled="disabled" name="exclude"></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div title="Export all of the refine values to a CSV file" class='exportRefine'>
+                                                                <button type="submit" class="btn btn-link pull-right" alt="Export all of the refine values to a CSV file" title="Export all of the refine values to a CSV file" value="Export refine" name="exportRefine">
+<span class="ico-log-in" aria-hidden="true"></span> <span
+class="btnText"> Export refine
+</span>
+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="resultsPanelCol" class="col-md-9">
+                                        <div id="resultsPanel">
+                                            <div id="rightColumn">
+                                                <div class="row sortContainer">
+                                                    <span id="sort_container">                                                       
+<span id="sortNav" class="pull-right">              
+<label for="navLoad" class="marginRight1">Sort on:</label>
+<select id="navLoad" class="mediumSelect"></select>                                                              
+</span>
+                                                    </span>
+                                                </div>
+                                                <div id="resultsPageOptions">
+                                                    <div class="row">
+                                                        <div id="resultsListToolbar" class="btn-toolbar" role="toolbar" aria-label="Results List Tool Bar">
+                                                            <div class="btn-group" role="group" id="btnToolbar">
+                                                                <ul class="list-unstyled list-inline" id="selectAllOptions">
+                                                                    <li id="selectAllCheck">
+                                                                        <input type="checkbox" name="groupCheckBox" id="allPageCheckBox" title="Select all results">
+                                                                        <label for="allPageCheckBox" class="checkbox-label noLabel">
+<span class="sr-only">Select all results on the page</span>
+</label>
+                                                                    </li>
+                                                                    <li id="selectAllPage">
+                                                                        <div id="selectAllOrPage" class="dropdownGroup">
+                                                                            <button type="button" class="btn btn-link dropdown-toggle color" id="showAllPageBubble" data-toggle="dropdown" aria-expanded="false">
+<span id="allPageSelectedValue" class="btnText fontSizeNorm">All</span>
+<span class="ico-navigate-down icon-after fontSizeNorm" aria-hidden="true"></span>
+</button>
+                                                                            <input id="oldSelectAllCheckBox" name="oldSelectAllCheckBox" type="hidden" value="false" />
+                                                                            <div class="dropdown-menu dropdown-menu-left" id="selectAllMenuItem" role="menu">
+                                                                                <span class="dropdownHeader"></span>
+                                                                                <span class="dropdownContent">
+<span class="dropdownContentWrap">
+<ul class="list-unstyled" id="allPageBubble" attr-currentPage="affiliationResults">
+<li>
+<input id="selectAllTop" name="allField" attr-sel="All" type="checkbox" value="on"/><input type="hidden" name="_allField" value="on"/>
+<label for="selectAllTop" class="checkbox-label" title="Select all results">Select all</label>
+</li>
+<li>
+<input id="selectPageTop" name="pageField" attr-sel="Page" type="checkbox" value="on"/><input type="hidden" name="_pageField" value="on"/>
+<label for="selectPageTop" class="checkbox-label" title="Select page results" >Select page</label>
+</li>
+</ul>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+                                                                                <span class="sr-only">Close show preview menu</span>
+                                                                                </button>
+                                                                                </span>
+                                                                                </span>
+                                                                                <span class="dropdownFooter"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="docHeaderLinks lnkDisabled">
+                                                                        <button type="button" class="btn-sm btn-link color clickAction showDocuments" disabled="disabled" data-type="showDocuments" title="Please select one or more affiliation(s) below to Show Documents">
+<span class="btnText">Show all documents</span>
+</button>
+                                                                    </li>
+                                                                    <li class="docHeaderLinks lnkDisabled">
+                                                                        <button type="button" class="btn-sm btn-link color clickAction feedback" disabled="disabled" data-type="feedback" title="Please select one or more affiliation(s) below to Send Feedback">
+<span class="btnText">Give feedback</span>
+</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="resultsBody">
+                                                    <table id="srchResultsList" class="table">
+                                                        <summary class="sr-only">Affiliation Result List</summary>
+                                                        <thead class="srchResultListWrapper">
+                                                            <tr>
+                                                                <th rowspan="2" id="resultNoHeader" class="media-bottom"><span class="sr-only">Result Number</span></th>
+                                                                <th rowspan="2" id="affilTitleHeader" class="media-bottom">Affiliation name</th>
+                                                                <th colspan="2" scope="colgroup" id="documentHeaderMain" class="noBorder textCenter noPadding  ">Documents</th>
+                                                                <th rowspan="2" id="cityHeader" class="media-bottom">City</th>
+                                                                <th rowspan="2" id="countryHeader" class="textRight media-bottom">Country/Territory</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th id="affiliationHeader" class="alignRight">Affiliation</th>
+                                                                <th id="documentsHeader" class="alignRight">Institution</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr id="resultDataRow1" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60022195" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60022195" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60022195" class="checkbox-label">
+1
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60022195&amp;offset=1&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+Massachusetts Institute of Technology
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Mit</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=0&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60022195&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 222080
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60022195&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 248904
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow2" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60024592" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60024592" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60024592" class="checkbox-label">
+2
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60024592&amp;offset=2&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Lincoln Laboratory
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Mit Lincoln Laboratory</div>
+                                                                        <div class="txtSmaller">Mit Lincoln Lab</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=1&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60024592&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 10790
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60024592&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 10790
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Lexington</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow3" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60001001" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60001001" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60001001" class="checkbox-label">
+3
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60001001&amp;offset=3&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+Broad Institute
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Broad Institute Of Mit And Harvard</div>
+                                                                        <div class="txtSmaller">Broad Institute</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=2&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60001001&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 10664
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60001001&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 10664
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow4" class="searchArea">
+                                                                <!-- Iterate through the list of affiliation groups on the session to see if any of them match the current affiliation.  
+If so, save off the group (since there are two different places where it is used below. -->
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60006320" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60006320" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60006320" class="checkbox-label">
+4
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60006320&amp;offset=4&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Computer Science and Artificial Intelligence Laboratory
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Mit Computer Science And Artificial Intelligence Laboratory</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=3&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60006320&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 8105
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60006320&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 8105
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow5" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60014228" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60014228" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60014228" class="checkbox-label">
+5
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60014228&amp;offset=5&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Sloan School of Management
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Mit Sloan School Of Management</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=4&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60014228&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 4096
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60014228&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 4096
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow6" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60026293" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60026293" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60026293" class="checkbox-label">
+6
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60026293&amp;offset=6&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+Singapore-MIT Alliance
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Singapore-mit Alliance</div>
+                                                                        <div class="txtSmaller">Singapore-mit Alliance For Research And Technology</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=5&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60026293&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3805
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60026293&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3805
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Singapore City</td>
+                                                                <td class="dataCol6 textRight">Singapore</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow7" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60003561" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60003561" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60003561" class="checkbox-label">
+7
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60003561&amp;offset=7&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Center for Theoretical Physics
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Center For Theoretical Physics</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=6&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60003561&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3784
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60003561&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3784
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow8" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60002243" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60002243" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60002243" class="checkbox-label">
+8
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60002243&amp;offset=8&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Media Laboratory
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Mit Media Lab</div>
+                                                                        <div class="txtSmaller">Mit Media Laboratory</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=7&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60002243&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3107
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60002243&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 3107
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow9" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60100145" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60100145" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60100145" class="checkbox-label">
+9
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60100145&amp;offset=9&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+McGovern Institute for Brain Research
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Mcgovern Institute For Brain Research</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=8&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60100145&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 1401
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60100145&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 1401
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow10" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60022717" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60022717" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60022717" class="checkbox-label">
+10
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60022717&amp;offset=10&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Plasma Science and Fusion Center
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Mit Plasma Science And Fusion Center</div>
+                                                                        <div class="txtSmaller">Mit Plasma Fusion Center</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=9&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60022717&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 791
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60022717&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 791
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow11" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60015009" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60015009" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60015009" class="checkbox-label">
+11
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60015009&amp;offset=11&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Haystack Observatory
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Mit Haystack Observatory</div>
+                                                                        <div class="txtSmaller">Mit-haystack Observatory</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=10&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60015009&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 433
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60015009&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 433
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Westford</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow12" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60113291" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60113291" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60113291" class="checkbox-label">
+12
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60113291&amp;offset=12&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+LIGO, Massachusetts Institute of Technology
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Ligo Laboratory</div>
+                                                                        <div class="txtSmaller">Ligo-california Institute Of Technology</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=11&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60113291&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 365
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60113291&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 365
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow13" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60097091" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60097091" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60097091" class="checkbox-label">
+13
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60097091&amp;offset=13&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+Center for Biological and Computational Learning, Cambridge
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Massachusetts Institute Of Technology</div>
+                                                                        <div class="txtSmaller">Mit</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=12&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60097091&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 131
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60097091&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 131
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                            <tr id="resultDataRow14" class="searchArea">
+                                                                <th class="dataCol1">
+                                                                    <div class="checkbox">
+                                                                        <input id="afil_id60113353" name="affiliationIds" onclick="selectAffiliationCheckbox(this)" name="affiliationLookUpFormKey" type="checkbox" value="60113353" /><input type="hidden"
+                                                                            name="_affiliationIds" value="on" />
+                                                                        <label for="afil_id60113353" class="checkbox-label">
+14
+</label>
+                                                                    </div>
+                                                                </th>
+                                                                <td class="dataCol2">
+                                                                    <div class="resultListSeparationMargin">
+                                                                        <div>
+                                                                            <span class="docTitle">
+<a href="/affil/submit/profile.uri?id=60113353&amp;offset=14&amp;sid=85fabd39ac09973644ef5a5506a876eb&amp;origin=AffiliationNamesList&amp;zone=AffResultsList">
+MIT Libraries
+</a>
+</span>
+                                                                        </div>
+                                                                        <div class="txtSmaller">Mit Libraries</div>
+                                                                        <div class="txtSmaller">Rotch Library For Architecture And Planning At Mit</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="resultsDocumentsCol" class="dataCol3 textRight">
+                                                                    <span>
+<a href="/results/affiliationLookup.uri?affiliationNameSelected=13&amp;affilName=Massachusetts+Institute+of+Technology&amp;origin=AffiliationNamesList&amp;resultsPerPage=20&amp;offset=1&amp;docSelectedAffiliation=60113353&amp;partialQuery=&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 77
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol4 textRight">
+                                                                    <span>
+<a href="/search/submit/affiliationplus.uri?affiliationId=60113353&amp;zone=AffResultsList&amp;sort="
+title="View the documents for this affiliation"> 77
+</a>
+</span>
+                                                                </td>
+                                                                <td class="dataCol5">Cambridge</td>
+                                                                <td class="dataCol6 textRight">United States</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row paginationCont">
+                                                    <div id="resultsFooter" class="col-md-12">
+                                                        <div class="col-md-4">
+                                                            <span class="resultsPerPageSpan pull-left">
+<label for="selectPageNo" class="plainLabel align-text-top marginRight1">Display:&nbsp;</label>
+<select id="resultsPerPage" name="resultsPerPage" class="extraSmallSelect">
+<option value="20" selected="selected">20</option><option value="50">50</option><option value="100">100</option><option value="200">200</option>
+</select>
+<label for="resultsPerPage" class="align-text-top marginLeft1">results per page</label>
+</span>
+                                                        </div>
+                                                        <div class="col-md-6 center-block text-center">
+                                                            <ul class="pagination">
+                                                                <input id="currentPage" name="currentPage" type="hidden" value="1" />
+                                                                <li>
+                                                                    <a data-value="1" href="#" onclick="submitOnPaginationLinkClick($(this).closest('form'),'1');">1</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="resultsTopOfPage col-md-2">
+                                                            <div class="pull-right">
+                                                                <a class="topOfPage" href="#top" title="Top of page">
+                                                                    <span class="ico-navigate-up" aria-hidden="true"></span>
+                                                                    <span class="anchorText">
+Top of page
+</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 footer">
+                        <footer role="contentinfo">
+                            <a href="#" name="skiptofooter" id="skiptofooter"></a>
+                            <div class="row footerLinks">
+                                <div class="col-md-3">
+                                    <header>
+                                        <h3>About Scopus</h3>
+                                    </header>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a target="_blank" href="https://www.elsevier.com/online-tools/scopus" title='Learn more about Scopus (opens in a new window)' class="secondaryLink">
+                                                <span class="anchorText">What is Scopus</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.elsevier.com/online-tools/scopus/content-overview/" title='Learn more about Scopus&#039; content coverage (opens in a new window)' class="secondaryLink">
+                                                <span class="anchorText">Content coverage</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://0-blog-scopus-com.millenium.itesm.mx/" title='Read the Scopus Blog (opens in a new window)' class="secondaryLink">
+                                                <span class="anchorText">Scopus blog</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://dev.elsevier.com/" title='Learn more about Scopus API&#039;s (opens in a new window)' class="secondaryLink">
+                                                <span class="anchorText">Scopus API</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.elsevier.com/about/our-business/policies/privacy-principles" title='View privacy matters page (opens in a new window)' class="secondaryLink">
+                                                <span class="anchorText">Privacy matters</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <header>
+                                        <h3>Language</h3>
+                                    </header>
+                                    <ul class="list-unstyled" id="languageSwitchList" data-currentlocale="en_US">
+                                        <li lang="ja">
+                                            <a lang="ja" hreflang="ja" href="/personalization/switch/Japanese.uri?origin=&zone=footer&locale=ja_JP" target="_top" title="日本語版を表示する" class="">
+                                                <span class="anchorText">
+日本語に切り替える
+</span>
+                                            </a>
+                                        </li>
+                                        <li lang="zh-Hans">
+                                            <a lang="zh-Hans" hreflang="zh-Hans" href="/personalization/switch/Chinese.uri?origin=&zone=footer&locale=zh_CN" target="_top" title="查看简体中文版本" class="">
+                                                <span class="anchorText">
+切换到简体中文
+</span>
+                                            </a>
+                                        </li>
+                                        <li lang="zh-Hant">
+                                            <a lang="zh-Hant" hreflang="zh-Hant" href="/personalization/switch/Chinese.uri?origin=&zone=footer&locale=zh_TW" target="_top" title="查看繁體中文版本" class="">
+                                                <span class="anchorText">
+切換到繁體中文
+</span>
+                                            </a>
+                                        </li>
+                                        <li lang="ru">
+                                            <a lang="ru" hreflang="ru" href="/personalization/switch/Russian.uri?origin=&zone=footer&locale=ru_RU" target="_top" title="Просмотр версии на русском языке" class="">
+                                                <span class="anchorText">
+Русский язык
+</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <header>
+                                        <h3>Customer Service</h3>
+                                    </header>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a target="_blank" title="View Scopus help files (opens in a new window)" href="/standard/contactUs.uri?pageOrigin=footer">
+                                                <span class="anchorText">Help</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" title="Contact us (opens in a new window)" href="/standard/contactForm.uri?pageOrigin=footer">
+                                                <span class="anchorText">
+Contact us
+</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row footerCopyright">
+                                <div class="col-md-2">
+                                    <a id="elsevierLogo" target="_blank" href="https://www.elsevier.com/" title="Go to the Elsevier site (opens in a new window)">
+                                        <img src="/static/images/logo_Elsevier.svg" alt="Elsevier">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <ul class="list-unstyled list-inline">
+                                        <li>
+                                            <a target="_blank" href="https://www.elsevier.com/locate/termsandconditions" title="View the terms and conditions of Elsevier (opens in a new window)" class="btn-link secondaryLink noPaddingLeft noBorder">
+                                                <span class="anchorText">
+Terms and conditions
+</span>
+                                                <span class="ico-external-link-after noMargin" aria-hidden="true"></span>
+                                                <span class="sr-only">View the terms and conditions of Elsevier (opens in a new window)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.elsevier.com/locate/privacypolicy" title="View the privacy policy of Elsevier (opens in a new window)" class="btn-link secondaryLink noPaddingLeft noBorder">
+                                                <span class="anchorText">
+Privacy policy
+</span>
+                                                <span class="ico-external-link-after noMargin" aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p id="copyRightID" class="noMargin">
+                                        Copyright © <a target="_blank" href="https://www.elsevier.com" title="Go to the Elsevier site (opens in a new window)" class="btn-link noPadding secondaryLink noBorder"><span class="anchorText">Elsevier B.V </span><span class="ico-external-link-after noMargin" aria-hidden="true"></span></a>.
+                                        All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+                                    </p>
+                                    <p class="cookiesTextID" class="noMargin">
+                                        We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the <a href="/cookies/policy.uri" title="See cookie details (opens in a new window)" class="btn-link noPadding secondaryLink">use of cookies</a>.
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <a id="relexLogo" href="http://www.relx.com" title="Go to RELX Group Homepage (Opens in a new window)" target="_blank">
+                                        <img src="/static/images/reLogo_orange.svg" alt="RELX Group" />
+                                        <img src="/static/images/reText_gray.svg" alt="RELX Group" />
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                        <script type="text/javascript">
+                            var originVal = "AffiliationNamesList";
+                            var SDM = new Object;
+                            SDM.si = new Object;
+                            SDM.si.sds = "f44607d0df9f9d3f22b52a6c0c73da1413bdd56a94400d1a5fccab0fc3783991ab1335dd8dee4be763ca9d11473d425b";
+                            SDM.tid = "12ED7CFAF1AF91E57AEDDFB31ED77FEF.wsnAw8kcdt7IPYLO0V48gA:224";
+                            SDM.ep = new Object();
+                            SDM.ep.prDevice = "https://els-eum.elsst.com";
+                            SDM.ep.urlPrefix = "http://0-www.scopus.com.millenium.itesm.mx";
+                            SDM.ieVersion = "8";
+                            SDM.pru = "https://els-eum.elsst.com";
+                            SDM.pru = window.location.protocol +
+                                SDM.pru.replace('http:', '').replace('https:', '');
+                            SDM.platform = "SC";
+                            SDM.pageType = "AffiliationNamesList";
+                            SDM.pageTransKey = "Mon Sep 09 18:27:24 UTC 2019#i-058cc38e1d83b05a2#12ED7CFAF1AF91E57AEDDFB31ED77FEF.wsnAw8kcdt7IPYLO0V48gA:224#12ED7CFAF1AF91E57AEDDFB31ED77FEF.wsnAw8kcdt7IPYLO0V48gA#104.214.75.120";
+                            SDM.sds = "77d9986495e9404b5c4869f1a9441d156bbagxrqa";
+                            SDM.pf = new Object();
+                            SDM.cpc = "SC";
+                        </script>
+                        <script type="text/javascript" src="/gzip_N972365176/bundles/ScopusMasterJS.js"></script>
+                        <script type="text/javascript" src="/gzip_1116872546/bundles/AffilResultsBottomMaster.js"></script>
+                        <input type="hidden" value="60245" id="accId" name="accId">
+                        <script type="text/javascript">
+                            var WAM = new Object;
+                            WAM.sep = "#";
+                            WAM.ud = "IPRANGE#322404#60245#84531";
+                            WAM.cars = "";
+                            WAM.part = "";
+                            WAM.exportAction = function(format, info, count) {
+                                return true;
+                            };
+                        </script>
+                        <script type="text/javascript">
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-busy="true" aria-live="assertive">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body textCenter">
+                            Loading...
+                            <span class="loading-wrapper">
+<span class="loadingIcon"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="spineContainer" class="spine" role="region" tabindex="-1">
+        <aside id="spineContent" role="complementary">
+            <header>
+                <h1 class="sr-only">Scopus Navigation Panel</h1>
+                <h2 id="spineHeading">
+                    <span class="headerText">Guest user</span>
+                    <button type="button" class="btn-md btn-link" id="spineToggleDeux" aria-controls="spineContainer" aria-expanded="true">
+<span class="hamburgerIcon"></span>
+<span class="sr-only">Expand navigation/Collapse navigation</span>
+</button>
+                </h2>
+            </header>
+            <div id="CARS_SETTINGS_TEMPLATE" class="hidden">
+            </div>
+            <div class="loggedInUserOpt">
+                <div class="panel-group" id="accordian">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="#personalPreferences" id="profileLink" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="false">
+                                    <span class="anchorText">Personal profile access</span>
+                                    <span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="personalPreferences" class="panel-collapse collapse"></div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="#myScopus" id="myScopusLink" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="false">
+                                    <span class="anchorText">My Scopus</span>
+                                    <span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="myScopus" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li><a href="javascript:void(0);" data-type="userDashboard" class="not-signed-in-user-link">Dashboard</a></li>
+                                <li><a href="javascript:void(0);" data-type="savedSearches" class="not-signed-in-user-link">Saved searches</a></li>
+                                <li><a href="javascript:void(0);" data-type="alerts" class="not-signed-in-user-link">Alerts</a></li>
+                                <li><a href="javascript:void(0);" data-type="savedLists" class="not-signed-in-user-link">Saved lists</a></li>
+                                <li><a href="javascript:void(0);" data-type="groupedAuthors" class="not-signed-in-user-link">Grouped authors</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="#myOrg" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="true">
+                                    <span class="anchorText">My organization</span>
+                                    <span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="myOrg" class="panel-collapse collapse in">
+                            <ul id="broughtToYouCnt" class="list-group">
+                                <li class="scopusBanner libraryBannerCont well">
+                                    <div id="banner-top">
+                                        <input type="hidden" id="bannerHeaderCheck" value="notAvailable">
+                                        <h4>Brought to you by</h4>
+                                        <h4>ITESM</h4>
+                                    </div>
+                                </li>
+                                <li class="librCatl">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul id="miscLinks" class="list-group list-unstyled">
+                <li>
+                    <a href="https://0-www-scival-com.millenium.itesm.mx/home" target="_blank">SciVal</a>
+                </li>
+                <li>
+                    <a href="https://0-www-mendeley-com.millenium.itesm.mx" target="_blank">Mendeley</a>
+                </li>
+                <li>
+                    <a href="https://www.elsevier.com/solutions/pure" target="_blank">Pure</a>
+                </li>
+                <li>
+                    <a id="privacyCenterLink" href="https://privacy.elsevier.com/?redirect_url=" target="_blank">Privacy center</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <script type="text/javascript" src="/gzip_N2121183168/bundles/pendoTop.js"></script>
+    <script type="text/javascript">
+        var pendoData = {};
+        pendoDataUtil.loadPendoDataObject("14680889",
+            "104.214.75.120",
+            "(14680889,U|322404,D|60245,A|84531,S|5,P|1,PL)(SCOPUS,CON|ANON_IP,ACCESS_TYPE)",
+            "ONLINE_REGISTERED",
+            "en_US",
+            "60245",
+            "Technological and Higher Education Institute of Monterrey",
+            "84531");
+        (function(p, e, n, d, o) {
+            var v, w, x, y, z;
+            o = p[d] = p[d] || {};
+            o._q = [];
+            v = ['initialize', 'identify', 'updateOptions', 'pageLoad'];
+            for (w = 0, x = v.length; w < x; ++w)
+                (function(m) {
+                    o[m] = o[m] ||
+
+                        function() {
+                            o._q[m === v[0] ? 'unshift' : 'push']([m]
+                                .concat([].slice.call(arguments, 0)));
+                        };
+                })(v[w]);
+            y = e.createElement(n);
+            y.async = !0;
+            y.src = 'https://cdn.pendo.io/agent/static/7108b796-60e0-44bd-6a6b-7313c4a99c35/pendo.js';
+            z = e.getElementsByTagName(n)[0];
+            z.parentNode.insertBefore(y, z);
+        })(window, document, 'script', 'pendo');
+        /* Call this whenever information about your visitors becomes available. 
+         * Please use Strings, Numbers, or Bools for value types. */
+        pendo.initialize({
+            apiKey: '7108b796-60e0-44bd-6a6b-7313c4a99c35',
+            visitor: {
+                id: pendoData.userId,
+                scopusOriginalId: pendoData.scopusOriginalId,
+                ipAddress: pendoData.ipAddress,
+                loginStatus: pendoData.loginStatus,
+                language: pendoData.language,
+                SCSessionID: pendoData.SCSessionID,
+                navigatorLanguage: window.navigator.language
+            },
+            account: {
+                id: pendoData.accountId,
+                name: pendoData.accountName,
+                accessType: pendoData.accessType,
+                consortiumId: pendoData.consortiumId
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        pageDataUtil.loadFooterPageDataObject();
+        pageData.page.loadTime = performance ? Math.round(performance.now()).toString() : '';
+        pageDataTracker.trackPageLoad();
+        siteCatPageUtil.afterPageLoad();
+    </script>
+    <script type="text/javascript">
+        window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "errorBeacon": "bam.nr-data.net",
+            "licenseKey": "0268925da8",
+            "agent": "",
+            "beacon": "bam.nr-data.net",
+            "applicationTime": 76,
+            "applicationID": "31454162",
+            "transactionName": "MwAGYhBYX0oEABUNXQpKN0YQUF9eJgwPEEALCQhTEBZDXBYWDRBBSwQCUAtVWFgRCg4KYAEWEVoWShERIiY1TQ==",
+            "queueTime": 0
+        }
+    </script>
+</body>
+
+</html>

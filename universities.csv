@@ -1,0 +1,200 @@
+qs_name,scopus_id,scopus_name,scival_id,scival_name
+Massachusetts Institute of Technology,60022195,Massachusetts Institute of Technology,Institution/508111,Massachusetts Institute of Technology
+Stanford University,60012708,Stanford University,Institution/508219,Stanford University
+Harvard University,60009982,Harvard University,Institution/508076,Harvard University
+California Institute of Technology,60031581,California Institute of Technology,Institution/508021,California Institute of Technology
+University of Oxford,60026851,University of Oxford,Institution/315091,University of Oxford
+University of Cambridge,60031101,University of Cambridge,Institution/315068,University of Cambridge
+ETH Zurich - Swiss Federal Institute of Technology,60025858,ETH Z√ºrich,Institution/306003,ETH
+Imperial College London,60015150,Imperial College London,Institution/315018,Imperial College London
+University of Chicago,60029278,The University of Chicago,Institution/508270,University of Chicago
+UCL,60022148,UCL,Institution/315069,University of Central Lancashire
+National University of Singapore,60017161,National University of Singapore,Institution/215004,National University of Singapore
+Nanyang Technological University,60005510,Nanyang Technological University,Institution/215003,Nanyang Technological University
+Princeton University,60003269,Princeton University,Institution/508191,Princeton University
+Cornell University,60007776,Cornell University,Institution/508047,Cornell University
+Yale University,60005455,Yale University,Institution/508383,Yale University
+Columbia University,60030162,Columbia University in the City of New York,Institution/508046,Columbia University
+Tsinghua University,60025278,Tsinghua University,Institution/203209,Tsinghua University
+The University of Edinburgh,60027272,University of Edinburgh,Institution/315074,University of Edinburgh
+University of Pennsylvania,60006297,University of Pennsylvania,Institution/508331,University of Pennsylvania
+University of Michigan,60025778,University of Michigan,Institution/508303,University of Michigan
+Johns Hopkins University,60005248,Johns Hopkins University,Institution/508094,Johns Hopkins University
+EPFL - Ecole Polytechnique Federale de Lausanne,60028186,Swiss Federal Institute of Technology EPFL,Institution/306002,Swiss Federal Institute of Technology EPFL
+The University of Tokyo,60025272,University of Tokyo,Institution/208180,University of Tokyo
+The Australian National University,60008950,Australian National University,Institution/201001,Australian National University
+The University of Hong Kong,60006541,The University of Hong Kong,Institution/205006,The University of Hong Kong
+Duke University,60008724,Duke University,Institution/508053,Duke University
+University of California Berkeley,60025038,"University of California, Berkeley ",Institution/508259,University of California at Berkeley
+University of Toronto,60016849,University of Toronto,Institution/501048,University of Toronto
+The University of Manchester,60003771,The University of Manchester,Institution/315088,University of Manchester
+Peking University,60014966,Peking University,Institution/203152,Peking University
+King's College London,60011520,King's College London,Institution/315026,King's College London
+University of California Los Angeles,60027550,"University of California, Los Angeles ",Institution/508262,University of California Los Angeles
+McGill University,60002494,McGill University,Institution/501016,McGill University
+Northwestern University,60007363,Northwestern University,Institution/508175,Northwestern University
+Kyoto University,60011001,Kyoto University,Institution/208081,Kyoto University
+Seoul National University,60013682,Seoul National University,Institution/209063,Seoul National University
+The Hong Kong University of Science and Technology,60008592,The Hong Kong University of Science and Technology,Institution/205005,Hong Kong University of Science and Technology
+The London School of Economics and Political Science,60003059,The London School of Economics and Political Science,Institution/315033,The London School of Economics and Political Science
+The University of Melbourne,60026553,University of Melbourne,Institution/201025,University of Melbourne
+KAIST - Korea Advanced Institute of Science & Technology,60032144,KAIST - Korea Advanced Institute of Science & Technology,Institution/209037,KAIST - Korea Advanced Institute of Science & Technology
+University of California San Diego,60030612,"University of California, San Diego ",Institution/508264,"University of California, San Diego "
+The University of Sydney,60025709,The University of Sydney,Institution/201032,The University of Sydney
+New York University,60021784,New York University,Institution/508166,New York University
+Fudan University,60009860,Fudan University,Institution/203060,Fudan University
+The University of New South Wales,60028333,The University of New South Wales,Institution/201027,The University of New South Wales
+Carnegie Mellon University,60027950,Carnegie Mellon University,Institution/508031,Carnegie Mellon University
+University of British Columbia,60010365,University of British Columbia,Institution/501036,University of British Columbia
+The University of Queensland,60031004,The University of Queensland,Institution/201029,The University of Queensland
+The Chinese University of Hong Kong,60002798,The Chinese University of Hong Kong,Institution/708595,The Chinese University of Hong Kong
+Université PSL,60108665,Universit√© PSL,Institution/707274,Université PSL
+University of Bristol,60020650,University of Bristol,Institution/315067,University of Bristol
+Delft University of Technology,60006288,Delft University of Technology,Institution/325001,Delft University of Technology
+University of Wisconsin-Madison,60032179,University of Wisconsin-Madison,Institution/508359,University of Wisconsin-Madison
+The University of Warwick,60022020,The University of Warwick,Institution/315110,University of Warwick
+City University of Hong Kong,60013983,City University of Hong Kong,Institution/205002,City University of Hong Kong
+Brown University,60011460,Brown University,Institution/508018,Brown University
+University of Amsterdam,60002483,University of Amsterdam,Institution/325012,University of Amsterdam
+Tokyo Institute of Technology,60031126,Tokyo Institute of Technology,Institution/208154,Tokyo Institute of Technology
+Monash University,60019578,Monash University,Institution/201015,Monash University
+Shanghai Jiao Tong University,60025084,Shanghai Jiao Tong University,Institution/203168,Shanghai Jiao Tong University
+Technical University of Munich,60019722,Technical University of Munich,Institution/309054,Technical University of Munich
+Ludwig-Maximilians-Universität München,60028717,Ludwig-Maximilians-Universit√§t M√ºnchen,Institution/309086,Ludwig Maximilian University of Munich
+University of Texas at Austin,60013372,University of Texas at Austin,Institution/508345,University of Texas at Austin
+Ruprecht-Karls-Universität Heidelberg,60016908,Ruprecht-Karls-Universität Heidelberg,Institution/309076,Heidelberg University
+Ecole Polytechnique,60013425,Ecole Polytechnique,Institution/314017,Ecole Polytechnique
+University of Washington,60015481,University of Washington,Institution/508358,University of Washington
+Osaka University,60024322,Osaka University,Institution/208126,Osaka University
+Zhejiang University,60003970,Zhejiang University,Institution/203243,Zhejiang University
+Georgia Institute of Technology,60019647,Georgia Institute of Technology,Institution/508072,Georgia Institute of Technology
+University of Glasgow,60001490,University of Glasgow,Institution/315078,University of Glasgow
+University of Illinois at Urbana-Champaign,60000745,University of Illinois at Urbana-Champaign,Institution/508285,University of Illinois at Urbana-Champaign
+National Taiwan University,60005429,National Taiwan University,Institution/217045,National Taiwan University
+Universidad de Buenos Aires,60001563,Universidad de Buenos Aires,Institution/601004,Universidad de Buenos Aires
+Durham University,60022175,Durham University,Institution/315071,University of Durham
+Sorbonne University,60105036,Sorbonne University,Institution/702285,Paris Sorbonne University Abu Dhabi
+The University of Sheffield,60001881,The University of Sheffield,Institution/315096,The University of Sheffield
+Tohoku University,60008435,Tohoku University,Institution/208148,Tohoku University
+University of Zurich,60012614,University of Zurich,Institution/306016,University of Zurich
+University of Birmingham,60019702,University of Birmingham,Institution/315064,University of Birmingham
+University of Copenhagen,60030840,K√∏benhavns Universitet,Institution/310011,University of Copenhagen
+KU Leuven,60025063,KU Leuven,Institution/303008,KU Leuven
+University of Nottingham,60015138,University of Nottingham,Institution/315090,University of Nottingham
+Pohang University of Science And Technology,60032330,Pohang University of Science And Technology,Institution/209059,Pohang University of Science and Technology
+University of North Carolina,60025111,The University of North Carolina at Chapel Hill,Institution/508320,University of North Carolina
+The University of Auckland,60005686,The University of Auckland,Institution/212005,The University of Auckland
+Korea University,60005273,Korea University,Institution/209049,Korea University
+Rice University,60005286,Rice University,Institution/508194,Rice University
+Universiti Malaya,60029157,Universiti Malaya,Institution/211009,Universiti Malaya
+The Ohio State University,60003500,The Ohio State University,Institution/508179,The Ohio State University
+Lomonosov Moscow State University,60007457,Lomonosov Moscow State University,Institution/331011,Lomonosov Moscow State University
+The University of Western Australia,60031806,The University of Western Australia,Institution/201035,The University of Western Australia
+Lund University,60029170,Lund University,Institution/332007,Lund University
+Boston University,60019674,Boston University,Institution/508013,Boston University
+University of Leeds,60012070,University of Leeds,Institution/315084,University of Leeds
+Pennsylvania State University,60001439,Pennsylvania State University,Institution/508186,Pennsylvania State University
+University of Southampton,60025225,University of Southampton,Institution/315097,University of Southampton
+University of St Andrews,60022132,University of St Andrews,Institution/315098,University of St Andrews
+University of Science and Technology of China,60025761,Huazhong University of Science and Technology,Institution/203213,University of Science and Technology of China
+Eindhoven University of Technology,60032882,Eindhoven University of Technology,Institution/325002,Eindhoven University of Technology
+Purdue University,60009254,Purdue University,Institution/508192,Purdue University
+Sungkyunkwan University,60007511,Sungkyunkwan University,Institution/209071,Sungkyunkwan University
+University of California Davis,60014439,University of California Davis,Institution/508260,University of California Davis
+Washington University in St. Louis,60010261,Washington University in St. Louis,Institution/508370,Washington University in St. Louis
+KTH Royal Institute of Technology,60002014,KTH Royal Institute of Technology,Institution/332012,KTH Royal Institute of Technology
+Trinity College Dublin,60011149,Trinity College Dublin,Institution/319006,Trinity College Dublin
+The Hong Kong Polytechnic University,60008928,The Hong Kong Polytechnic University,Institution/205004,The Hong Kong Polytechnic University
+Yonsei University,60016912,Yonsei University,Institution/209077,Yonsei University
+University of Geneva,60004718,University of Geneva,Institution/306014,University of Geneva
+University of Alberta,60030835,University of Alberta,Institution/501035,University of Alberta
+University of Helsinki,60002952,University of Helsinki,Institution/313007,University of Helsinki
+Nagoya University,60000264,Nagoya University,Institution/208093,Nagoya University
+Technical University of Denmark,60011373,Technical University of Denmark,Institution/310009,Technical University of Denmark
+Universidad Nacional Autónoma de México,60032442,Universidad Nacional Autónoma de México,Institution/505023,Universidad Nacional Autónoma de México
+The University of Adelaide,60009512,The University of Adelaide,Institution/201022,University of Adelaide
+University of Southern California,60029311,University of Southern California,Institution/508341,University of Southern California
+KIT,60102538,Karlsruhe Institute of Technology,Institution/309062,Karlsruhe Institute of Technology
+Uppsala University,60003858,Uppsala University,Institution/332018,Uppsala University
+Universidade de São Paulo,60008088,Universidade de São Paulo,Institution/602049,Universidade de Sao Paulo
+Queen Mary University of London,60022109,Queen Mary University of London,Institution/315047,Queen Mary University of London
+University of Groningen,60010023,University of Groningen,Institution/325013,University of Groningen
+Humboldt-Universität zu Berlin,60000762,Humboldt-Universität zu Berlin,Institution/309021,Humboldt University of Berlin
+Leiden University,60032730,Indian Institute of Technology Delhi,Institution/325005,Leiden University
+Nanjing University,60033100,Nanjing University,Institution/203129,Nanjing University
+Utrecht University,60007989,Utrecht University,Institution/325015,Utrecht University
+Wageningen University & Research,60004156,Wageningen University and Research Centre,Institution/325017,Wageningen University & Research
+Kyushu University,60011047,Kyushu University,Institution/208083,Kyushu University
+University of Maryland,60020304,University of Maryland,Institution/508294,"University of Maryland, Baltimore"
+Chalmers University of Technology,60000990,Chalmers University of Technology,Institution/332001,Chalmers University of Technology
+Hokkaido University,60014652,Hokkaido University,Institution/208034,Hokkaido University
+Freie Universitaet Berlin,60030718,Freie Universität Berlin,Institution/309010,Free University of Berlin
+Lancaster University,60023643,Lancaster University,Institution/315028,Lancaster University
+Pontificia Universidad Católica de Chile,60029681,Pontificia Universidad Católica de Chile,Institution/603001,Pontificia Universidad Catolica de Chile
+University of California Santa Barbara,60029241,"University of California, Santa Barbara",Institution/508266,University of California Santa Barbara
+University of Oslo,60010348,Universitetet i Oslo,Institution/326007,University of Oslo
+University of Pittsburgh,60015543,University of Pittsburgh,Institution/508332,University of Pittsburgh
+CentraleSupélec,60106088,CentraleSupélec,Institution/314295,CentraleSupelec
+Ghent University,60033316,Universiteit Gent,Institution/303004,Ghent University
+University of Bern,60020486,University of Bern,Institution/306012,University of Bern
+Aalto University,60103653,Aalto University,Institution/313003,Aalto University
+Aarhus University,60029616,Aarhus Universitet,Institution/310010,Aarhus University
+Michigan State University,60031707,Michigan State University,Institution/508122,Michigan State University
+Newcastle University,60006222,"Newcastle University, United Kingdom",Institution/315089,Newcastle University
+RWTH Aachen University,60016653,Rheinisch-Westfälische Technische Hochschule Aachen,Institution/309048,RWTH Aachen University
+Cardiff University,60023998,Cardiff University,Institution/315006,Cardiff University
+McMaster University,60031828,McMaster University,Institution/501017,McMaster University
+Technische Universität Berlin,60011604,Technical University of Berlin,Institution/309050,Technical University of Berlin
+Emory University,60000928,Emory University,Institution/508059,Emory University
+Université de Montréal,60009507,University of Montreal,Institution/501028,University of Montreal
+University of Lausanne,60000239,Université de Lausanne (UNIL),Institution/306015,University of Lausanne
+Hanyang University,60024872,Hanyang University,Institution/209025,Hanyang University
+École Normale Supérieure de Lyon,60005667,Ecole Normale Supérieure de Lyon,Institution/314016,√âcole Normale Sup√©rieure de Lyon
+The Hebrew University of Jerusalem,60007903,Hebrew University of Jerusalem,Institution/403004,Hebrew University of Jerusalem
+The University of Exeter,60026479,University of Exeter,Institution/315076,University of Exeter
+Politecnico di Milano,60023256,Politecnico di Milano,Institution/321018,Polytechnic University of Milan
+University of Minnesota,60029445,University of Minnesota Twin Cities,Institution/508305,University of Minnesota
+University of Bath,60030480,University of Bath,Institution/315063,University of Bath
+Universidad Autónoma de Madrid,60026796,Universidad Autónoma de Madrid,Institution/312010,Universidad Aut√≥noma de Madrid
+University of Basel,60023588,Universitat Basel,Institution/306011,University of Basel
+University of Technology Sydney,60023932,University of Technology Sydney,Institution/201034,University of Technology Sydney
+Indian Institute of Technology Bombay,60014153,"Indian Institute of Technology, Bombay",Institution/207030,"Indian Institute of Technology, Bombay"
+National Tsing Hua University,60018029,National Tsing Hua University,Institution/217047,National Tsing Hua University
+University of Waterloo,60014171,University of Waterloo,Institution/501051,University of Waterloo
+Université catholique de Louvain,60000874,Universite Catholique de Louvain,Institution/303009,Universite Catholique de Louvain
+University of Liverpool,60020661,University of Liverpool,Institution/315086,University of Liverpool
+Universitat de Barcelona,60001576,Universitat de Barcelona,Institution/312046,University of Barcelona
+Sant'Anna - Scuola Universitaria Superiore Pisa,60028039,Scuola Superiore Sant'Anna di Studi Universitari e di Perfezionamento,Institution/321022,Sant'Anna School of Advanced Studies
+Eberhard Karls Universität Tübingen,60017246,Universität Tübingen,Institution/309094,University of Tübingen
+University of California Irvine,60007278,University of California Irvine,Institution/508261,University of California Irvine
+Indian Institute of Science,60014097,"Indian Institute of Science, Bengaluru",Institution/207028,Indian Institute of Science Bangalore
+University of Bergen,60029622,Universitetet i Bergen,Institution/326006,University of Bergen
+Indian Institute of Technology Delhi,60032730,Indian Institute of Technology Delhi,Institution/207031,"Indian Institute of Technology, Delhi"
+University of Aberdeen,60015875,University of Aberdeen,Institution/315062,University of Aberdeen
+University of Twente,60020599,University of Twente,Institution/325014,University of Twente
+Scuola Normale Superiore di Pisa,60030674,Scuola Normale Superiore di Pisa,Institution/321021,Scuola Normale Superiore di Pisa
+University of Vienna,60025988,Universitat Wien,Institution/301013,University of Vienna
+University of Otago,60017311,University of Otago,Institution/212007,University of Otago
+Tecnológico de Monterrey,60007966,Tecnologico de Monterrey,Institution/505012,Instituto Tecnologico de Estudios Superiores de Monterrey
+Erasmus University Rotterdam,60022265,Erasmus University Rotterdam,Institution/325003,Erasmus University Rotterdam
+Queen’s University Belfast,60029738,Queen's University Belfast,Institution/315048,Queen's University Belfast
+Alma Mater Studiorum - University of Bologna,60028218,Alma Mater Studiorum Università di Bologna,Institution/321040,University of Bologna
+University of Florida,60013959,University of Florida,Institution/508279,University of Florida
+Dartmouth College,60010756,Dartmouth College,Institution/508050,Dartmouth College
+Universiti Kebangsaan Malaysia,60001821,Universiti Kebangsaan Malaysia,Institution/211003,Universiti Kebangsaan Malaysia
+University of Rochester,60027165,University of Rochester,Institution/508335,University of Rochester
+Case Western Reserve University,60000305,Case Western Reserve University,Institution/508032,Case Western Reserve University
+Albert-Ludwigs-Universitaet Freiburg,60101437,"Albert Ludwigs Universität Freiburg, Medizinische Fakultät",Institution/309072,University of Freiburg
+Vrije Universiteit Brussel,60026810,Vrije Universiteit Brussel,Institution/303014,Vrije Universiteit Brussel
+King Fahd University of Petroleum & Minerals,60009506,King Fahd University of Petroleum and Minerals,Institution/409002,King Fahd University of Petroleum and Minerals
+University of Colorado Boulder,60000221,University of Colorado at Boulder,Institution/508272,University of Colorado Boulder
+Technische Universität Dresden,60018353,Technische Universität Dresden,Institution/309052,Technische Universität Dresden
+University of Virginia,60021918,University of Virginia,Institution/508357,University of Virginia
+Universitat Autònoma de Barcelona,60023020,Universitat Autònoma de Barcelona,Institution/312045,Autonomous University of Barcelona
+University College Dublin,60005141,University College Dublin,Institution/319008,University College Dublin
+University of Reading,60012197,University of Reading,Institution/315094,University of Reading
+Vanderbilt University,60003915,Vanderbilt University,Institution/508363,Vanderbilt University
+University of Göttingen,60031514,Universität Göttingen,Institution/309073,University of Göttingen
+Keio University,60025997,Keio University,Institution/208064,Keio University
+Vienna University of Technology,60018163,Technische Universitat Wien,Institution/301014,Vienna University of Technology
+Stockholm University,60028378,Stockholms universitet,Institution/332014,Stockholm University
