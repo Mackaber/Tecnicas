@@ -195,7 +195,7 @@ getScopusValues = () => {
 
 // Initialization Stuff
 universities = {}
-university_list = parseUniversities("batch_list.csv")
+university_list = parseUniversities("universities.csv")
 years = ["2019", "2018", "2017", "2016", "2015", "2014"]
 
 const jar = request.jar();
